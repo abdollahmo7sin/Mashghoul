@@ -1,0 +1,495 @@
+﻿<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content>
+    <link rel="stylesheet" href="css/bootstrap.rtl.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Mashghol</title>
+
+</head>
+
+<body>
+
+
+    <!-- Start Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-main-content">
+                <button class="bars" aria-label="barsIcon">
+                    <span class="line line1"></span>
+                    <span class="line line2"></span>
+                    <span class="line line3"></span>
+                </button>
+
+                <a href="index.html" class="logo-img" aria-label="logo">
+                    <img class="img-fluid" src="images/logo.png" alt="logo">
+                </a>
+
+                <nav class="navigation">
+                    <ul class="main-menu list-unstyled">
+                        <li>
+                            <a href="index.html">الرئيسية </a>
+                        </li>
+
+                        <li class="menu-item-has-children">
+                            <a href="Categories.html">الاقسام </a>
+                            <ul class="sub-menu list-unstyled">
+                                <li>
+                                    <a href>قسم 1</a>
+                                </li>
+                                <li>
+                                    <a href>قسم 2</a>
+                                </li>
+                                <li>
+                                    <a href>قسم 3</a>
+                                </li>
+                                <li>
+                                    <a href>قسم 4</a>
+                                </li>
+
+                            </ul>
+                        </li>
+
+
+                        <li>
+                            <a href="faqs.html">الأسئلة الشائعة</a>
+                        </li>
+
+                        <li>
+                            <a href="contact.html">اتصل بنا</a>
+                        </li>
+                    </ul>
+                </nav>
+
+                <div class="header-icons ">
+                    <a href="#" class="header-icon search-icon"><i class="fa-light fa-magnifying-glass"></i></a>
+                    <a href="Favourites.html" class="header-icon wishlist-icon"><i class="fa-light fa-heart"></i></a>
+                    <a href="login.html" class="header-icon user-icon"><i class="fa-light fa-user"></i></a>
+                    <a href="set-location.html" class="header-icon location-icon"><i class="fa-light fa-location-dot"></i></a>
+                    <a href="Booking-completed-with-rating-en.html" class="lang-switcher">En</a>
+                </div>
+
+            </div>
+
+            <div class="search-form-wrapper">
+                <form class="search-form">
+                    <input type="text" class="search-input form-control" placeholder="ابحث عن ...">
+                    <button type="submit" class="search-btn btn"><i class="fa-light fa-magnifying-glass"></i></button>
+                </form>
+            </div>
+        </div>
+    </header>
+    <!-- End Header -->
+
+    <!-- Start Breadcrumb -->
+    <div class="container">
+        <nav style="--bs-breadcrumb-divider: '|';" aria-label="breadcrumb" class="my-4">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="index.html">الرئيسية</a></li>
+                <li class="breadcrumb-item"><a href="my-bookings.html">حجوزاتي</a></li>
+                <li class="breadcrumb-item active" aria-current="page">تفاصيل الحجز</li>
+            </ol>
+        </nav>
+    </div>
+    <!-- End Breadcrumb -->
+
+    <div class="booking-details-section pb-64">
+        <div class="container">
+            <div class="row mb-4">
+                <div class="col-lg-6 mb-4 mb-lg-0 ">
+                    <div class="data-card">
+                        <h3 class="data-card-title">بيانات الحجز</h3>
+                        <div class="data-list">
+                            <div class="data-item">
+                                <span class="label"><i class="fa-solid fa-angles-left"></i> رقم الحجز</span>
+                                <span class="value">123456</span>
+                            </div>
+                            <div class="data-item">
+                                <span class="label"><i class="fa-solid fa-angles-left"></i> تاريخ و وقت انشاء
+                                    الحجز</span>
+                                <span class="value">2026/5/2 - 1:00</span>
+                            </div>
+                            <div class="data-item">
+                                <span class="label"><i class="fa-solid fa-angles-left"></i> حالة الحجز</span>
+                                <!-- <span class="status-badge pending">في الانتظار</span> -->
+                                <span class="status-badge completed">مكتمل</span>
+                                <!-- <span class="status-badge processing">جاري تنفيذ الخدمة</span> -->
+                                <!-- <span class="status-badge canceled">لم يتم تنفيذ الخدمة</span> -->
+                            </div>
+                            <div class="data-item">
+                                <span class="label"><i class="fa-solid fa-angles-left"></i> التاريخ المحدد
+                                    للتنفيذ</span>
+                                <span class="value">2026/5/2</span>
+                            </div>
+                            <div class="data-item">
+                                <span class="label"><i class="fa-solid fa-angles-left"></i> الموعد المحدد للتنفيذ</span>
+                                <span class="value">1:00</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 ">
+                    <div class="data-card">
+                        <h3 class="data-card-title">بيانات المشغل</h3>
+                        <div class="data-list">
+                            <div class="data-item">
+                                <span class="label"><i class="fa-solid fa-angles-left"></i> اسم المشغل</span>
+                                <span class="value">مركز الشخصيات المهمة للعناية الرجالية</span>
+                            </div>
+                            <div class="data-item">
+                                <span class="label"><i class="fa-solid fa-angles-left"></i> المدينة</span>
+                                <span class="value">الرياض</span>
+                            </div>
+                            <div class="data-item">
+                                <span class="label"><i class="fa-solid fa-angles-left"></i> الموقع الجغرافي</span>
+                                <a href="#" class="value text-danger text-decoration-underline">عرض علي الخريطة</a>
+                            </div>
+                            <div class="data-item">
+                                <span class="label"><i class="fa-solid fa-angles-left"></i> مواعيد العمل</span>
+                                <span class="value">يومياً: 11:00ص - 9:00م</span>
+                            </div>
+                            <div class="data-item">
+                                <span class="label"><i class="fa-solid fa-angles-left"></i> اسم الكرسي</span>
+                                <span class="value">الكرسي الأول</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+
+
+            <div class="data-card mb-4" id="order-rating-card">
+                <h3 class="data-card-title">تقييم الطلب</h3>
+                <div class="row">
+                    <div class="col-lg-6 mb-4 mb-lg-0 border-end-md">
+                        <div class="rating-display-item">
+                            <div class="rating-header d-flex gap-4  align-items-center mb-2">
+                                <div class="rating-label  ">
+                                    <i class="fa-solid fa-angles-left me-2"></i>الخدمة
+                                </div>
+                                <div class="star-rating static">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </div>
+                            </div>
+                            <p class="rating-comment text-muted mb-0">
+                                كانت تجربتي رائعة جدًا، الخدمة ممتازة والموظفات محترفات. أكيد راح أرجع لكم قريب!
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6">
+                        <div class="rating-display-item">
+                            <div class="rating-header d-flex gap-4  align-items-center mb-2">
+                                <div class="rating-label">
+                                    <i class="fa-solid fa-angles-left me-2 "></i>المكان
+                                </div>
+                                <div class="star-rating static">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </div>
+                            </div>
+                            <p class="rating-comment text-muted mb-0">
+                                المشغل نظيف جدًا والتعامل كان راقي، حبيت اهتمامهم بأدق التفاصيل. أتمنى لو تزيدون عدد
+                                الخيارات في قائمة الخدمات
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="row mb-4">
+                <div class="col-lg-6 mb-4 mb-lg-0">
+                    <div class="data-card">
+                        <h3 class="data-card-title">قائمة الخدمات</h3>
+                        <div class="data-list">
+                            <div class="data-item">
+                                <span class="label"><i class="fa-solid fa-angles-left"></i> اسم الخدمة ( 25دقيقة
+                                    )</span>
+                                <span class="price">250 <i class="icon-saudi_riyal"></i></span>
+                            </div>
+                            <div class="data-item">
+                                <span class="label"><i class="fa-solid fa-angles-left"></i> اسم المنتج</span>
+                                <span class="price">250 <i class="icon-saudi_riyal"></i></span>
+                            </div>
+                            <div class="data-item">
+                                <span class="label"><i class="fa-solid fa-angles-left"></i> اسم الخدمة ( 25دقيقة
+                                    )</span>
+                                <span class="price">250 <i class="icon-saudi_riyal"></i></span>
+                            </div>
+                        </div>
+                        <div class="total-duration-row">
+                            <span class="label">اجمالى مدة التنفيذ</span>
+                            <span class="value">50 دقيقة</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6">
+                    <div class="data-card">
+                        <h3 class="data-card-title">تفاصيل الدفع</h3>
+                        <div class="data-list">
+                            <div class="data-item">
+                                <span class="label"><i class="fa-solid fa-angles-left"></i> طريقة الدفع</span>
+                                <span class="value">ماستركارد</span>
+                            </div>
+                            <div class="data-item">
+                                <span class="label"><i class="fa-solid fa-angles-left"></i> المبلغ المدفوع</span>
+                                <span class="value">250 <i class="icon-saudi_riyal"></i></span>
+                            </div>
+                            <div class="data-item">
+                                <span class="label"><i class="fa-solid fa-angles-left"></i> الفاتورة</span>
+                                <a href="#" class="value text-danger text-decoration-underline">تحميل</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="data-card cost-details">
+                <h3 class="data-card-title mb-4">تفاصيل التكلفة</h3>
+
+                <div class="grid-cost-list">
+                    <div class="data-item">
+                        <span class="label"><i class="fa-solid fa-angles-left"></i> إجمالي قيمة الخدمات</span>
+                        <span class="value">250 <i class="icon-saudi_riyal"></i></span>
+                    </div>
+                    <div class="data-item">
+                        <span class="label"><i class="fa-solid fa-angles-left"></i> إجمالي قيمة المنتجات</span>
+                        <span class="value">250 <i class="icon-saudi_riyal"></i></span>
+                    </div>
+                    <div class="data-item">
+                        <span class="label"><i class="fa-solid fa-angles-left"></i> كود خصم ( 10% )</span>
+                        <span class="value">250 <i class="icon-saudi_riyal"></i></span>
+                    </div>
+                    <div class="data-item">
+                        <span class="label"><i class="fa-solid fa-angles-left"></i> إجمالي التكلفة</span>
+                        <span class="value">250 <i class="icon-saudi_riyal"></i></span>
+                    </div>
+                    <div class="data-item">
+                        <span class="label"><i class="fa-solid fa-angles-left"></i> رسوم الحجز</span>
+                        <span class="value">250 <i class="icon-saudi_riyal"></i></span>
+                    </div>
+                </div>
+
+                <div class="cost-divider-horizontal"></div>
+
+                <div class="row g-0 cost-footer-row">
+                    <div class="col-md-6 cost-col cost-col-right border-end-md">
+                        <div class="final-total">
+                            <span class="label">الإجمالي النهائي</span>
+                            <span class="value">250 <i class="icon-saudi_riyal"></i></span>
+                        </div>
+                    </div>
+                    <div class="col-md-6 cost-col cost-col-left">
+                        <div class="earned-points">
+                            <span class="label">النقاط المكتسبة</span>
+                            <span class="value">50 نقطة</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="rate-service mt-5 text-center">
+                <button type="button" class="btn btn-green py-2 px-5" data-bs-toggle="modal" data-bs-target="#rating-modal">تقييم الخدمة</button>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Rating Modal -->
+    <div class="modal fade custom-bootstrap-modal" id="rating-modal" tabindex="-1" aria-labelledby="ratingModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header d-flex justify-content-center position-relative">
+                    <h3 class="modal-title w-100 text-center" id="ratingModalLabel">تقييم الخدمة</h3>
+                    <button type="button" class="btn-close position-absolute start-0 ms-3" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <!-- Service Rating -->
+                    <div class="rating-group mb-4">
+                        <div class="d-flex justify-content-between align-items-center gap-2">
+                            <label class="rating-label">الخدمة</label>
+                            <div class="star-rating">
+                                <i class="fa-solid fa-star" data-value="1"></i>
+                                <i class="fa-solid fa-star" data-value="2"></i>
+                                <i class="fa-solid fa-star" data-value="3"></i>
+                                <i class="fa-solid fa-star" data-value="4"></i>
+                                <i class="fa-solid fa-star" data-value="5"></i>
+                                <input type="hidden" name="service_rating" id="service_rating_input">
+                            </div>
+                        </div>
+                        <input type="text" class="form-control mt-2" placeholder="اضف ملاحظتك عن الخدمة">
+                    </div>
+
+                    <!-- Location Rating -->
+                    <div class="rating-group">
+                        <div class="d-flex justify-content-between align-items-center gap-2">
+                            <label class="rating-label">المكان</label>
+                            <div class="star-rating">
+                                <i class="fa-solid fa-star" data-value="1"></i>
+                                <i class="fa-solid fa-star" data-value="2"></i>
+                                <i class="fa-solid fa-star" data-value="3"></i>
+                                <i class="fa-solid fa-star" data-value="4"></i>
+                                <i class="fa-solid fa-star" data-value="5"></i>
+                                <input type="hidden" name="location_rating" id="location_rating_input">
+                            </div>
+                        </div>
+                        <input type="text" class="form-control mt-2" placeholder="اضف ملاحظتك عن المكان">
+                    </div>
+                </div>
+                <div class="modal-footer d-flex flex-row justify-content-center gap-3">
+                    <button type="button" class="btn btn-green modal-confirm px-5" data-bs-dismiss="modal">تأكيد</button>
+                    <button type="button" class="btn modal-cancel px-5" data-bs-dismiss="modal">إلغاء</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <!-- Start Footer -->
+    <footer class="site-footer">
+        <div class="container">
+
+
+            <div class="row">
+
+                <div class="col-lg-3">
+                    <div class="footer-about">
+
+                        <img src="images/logo_optmized.webp" class="img-fluid" alt>
+                        <p>وجهتك المثالية لخدمات التجميل بكل سهولة وراحة!</p>
+
+                    </div>
+                </div>
+                <div class="col-lg-3  ">
+                    <div class="footer-menu">
+                        <h4 class="footer-title">روابط سريعة</h4>
+                        <ul class="list-unstyled">
+                            <li><a href="index.html">الرئيسية</a></li>
+                            <li><a href="Categories.html">الأقسام</a></li>
+                            <li><a href="blogs.html">المدونة</a></li>
+                            <li><a href="Customer-reviews.html">آراء العملاء</a></li>
+                            <li><a href>انضم الينا كمقدم خدمة</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3  ">
+                    <div class="footer-menu">
+                        <h4 class="footer-title">روابط هامة</h4>
+                        <ul class="list-unstyled">
+                            <li><a href="page.html">عن مشغول</a></li>
+                            <li><a href="page.html">الشروط والأحكام</a></li>
+                            <li><a href="page.html">سياسة الخصوصية</a></li>
+                            <li><a href>الاسئلة الشائعة</a></li>
+                            <li><a href="contact.html">اتصل بنا</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3  ">
+                    <div class="footer-info footer-menu">
+                        <h4 class="footer-title">تواصل معنا</h4>
+                        <ul class="list-unstyled">
+                            <li> <a href>+966 50 000 0000</a></li>
+                            <li> <a href>+966 50 000 0000</a></li>
+                            <li> <a href>info@gmail.com</a></li>
+                        </ul>
+
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
+        <div class="copyrights">
+            <div class="container">
+                <div class="text-center">جميع الحقوق محفوظة لـ <span>مشغول</span> 2026 | <a href="https://targetlines.com/" target="_blank">شركة تارجت لاينز</a></div>
+            </div>
+        </div>
+    </footer>
+    <!-- End Footer -->
+
+    <script>
+        // Star Rating Logic
+        function initStarRating(group) {
+            const stars = group.querySelectorAll('.star-rating i');
+            const input = group.querySelector('input[type="hidden"]');
+
+            stars.forEach(star => {
+                // Hover Effects
+                star.addEventListener('mouseover', function () {
+                    const value = this.getAttribute('data-value');
+                    highlightStars(stars, value);
+                });
+
+                star.addEventListener('mouseout', function () {
+                    const currentValue = input.value || 0;
+                    highlightStars(stars, currentValue);
+                });
+
+                // Click to Rate
+                star.addEventListener('click', function () {
+                    const value = this.getAttribute('data-value');
+                    input.value = value;
+                    highlightStars(stars, value);
+
+                    // Set active class for persistent state
+                    stars.forEach(s => {
+                        if (s.getAttribute('data-value') <= value) {
+                            s.classList.add('active');
+                        } else {
+                            s.classList.remove('active');
+                        }
+                    });
+                });
+            });
+        }
+
+        function highlightStars(stars, value) {
+            stars.forEach(star => {
+                if (star.getAttribute('data-value') <= value) {
+                    star.classList.add('star-active', 'hovered');
+                } else {
+                    star.classList.remove('star-active', 'hovered');
+                }
+            });
+        }
+
+        // Initialize all rating groups
+        document.querySelectorAll('.rating-group').forEach(group => {
+            initStarRating(group);
+        });
+
+    </script>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/main.js"></script>
+
+
+
+</body>
+
+</html>
