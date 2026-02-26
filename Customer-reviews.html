@@ -71,7 +71,8 @@
                     <a href="#" class="header-icon search-icon"><i class="fa-light fa-magnifying-glass"></i></a>
                     <a href="Favourites.html" class="header-icon wishlist-icon"><i class="fa-light fa-heart"></i></a>
                     <a href="login.html" class="header-icon user-icon"><i class="fa-light fa-user"></i></a>
-                    <a href="set-location.html" class="header-icon location-icon"><i class="fa-light fa-location-dot"></i></a>
+                    <a href="set-location.html" class="header-icon location-icon"><i
+                            class="fa-light fa-location-dot"></i></a>
                     <a href="Customer-reviews-en.html" class="lang-switcher">En</a>
                 </div>
 
@@ -145,7 +146,6 @@
                     </div>
                     <div class="col-lg-4 mb-4">
                         <div class="single-testimonial-card">
-
                             <div class="user-info">
                                 <div class="d-flex align-items-center gap-2">
                                     <img src="images/user.webp" alt="testimonials-img" class="img-fluid d-block">
@@ -165,10 +165,72 @@
                                     <i class="fa-solid fa-calendar"></i>
                                 </div>
                             </div>
-                            <div class="testimonials-text">
+                            <div class="testimonial-media-wrapper"
+                                onclick="openMediaModal('image', 'images/about.webp')">
+                                <img src="images/about.webp" class="testimonial-media-img" alt="Review">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 mb-4">
+                        <div class="single-testimonial-card">
+                            <div class="user-info">
+                                <div class="d-flex align-items-center gap-2">
+                                    <img src="images/user.webp" alt="testimonials-img" class="img-fluid d-block">
+                                    <div class="user-rate-holder">
+                                        <div class="name">برديس وليد</div>
+                                        <div class="rate">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="rview-date">
+                                    <span>Feb 2, 2026</span>
+                                    <i class="fa-solid fa-calendar"></i>
+                                </div>
+                            </div>
+                            <div class="testimonial-media-wrapper"
+                                onclick="openMediaModal('video', 'images/video.mp4')">
+                                <img src="images/about.webp" class="testimonial-media-img" alt="Video">
+                                <div class="play-overlay-btn"><i class="fa-solid fa-play"></i></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 mb-4">
+                        <div class="single-testimonial-card">
+                            <div class="user-info">
+                                <div class="d-flex align-items-center gap-2">
+                                    <img src="images/user.webp" alt="testimonials-img" class="img-fluid d-block">
+                                    <div class="user-rate-holder">
+                                        <div class="name">برديس وليد</div>
+                                        <div class="rate">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="rview-date">
+                                    <span>Feb 2, 2026</span>
+                                    <i class="fa-solid fa-calendar"></i>
+                                </div>
+                            </div>
+                            <div class="testimonial-media-wrapper border-top">
+                                <div class="audio-player-wrapper">
+                                    <button
+                                        class="btn btn-blue play-audio-btn d-flex align-items-center justify-content-center flex-shrink-0"
+                                        onclick="toggleAudio(this)">
+                                        <i class="fa-solid fa-play"></i>
+                                    </button>
+                                    <img src="images/audio-waves.png" class="waveform-img" alt="Waveform">
+                                    <audio src="images/audio.mp3" onended="resetAudio(this)"></audio>
+                                </div>
 
-                                "موقع عبقري! جمع لي كل صالونات التجميل في مكان واحد، والبحث فيه سهل جداً والخدمات اللي
-                                اخترتها كانت قمة في الاحترافية."
                             </div>
                         </div>
                     </div>
@@ -203,7 +265,6 @@
                     </div>
                     <div class="col-lg-4 mb-4">
                         <div class="single-testimonial-card">
-
                             <div class="user-info">
                                 <div class="d-flex align-items-center gap-2">
                                     <img src="images/user.webp" alt="testimonials-img" class="img-fluid d-block">
@@ -223,16 +284,14 @@
                                     <i class="fa-solid fa-calendar"></i>
                                 </div>
                             </div>
-                            <div class="testimonials-text">
-
-                                "موقع عبقري! جمع لي كل صالونات التجميل في مكان واحد، والبحث فيه سهل جداً والخدمات اللي
-                                اخترتها كانت قمة في الاحترافية."
+                            <div class="testimonial-media-wrapper"
+                                onclick="openMediaModal('image', 'images/about.webp')">
+                                <img src="images/about.webp" class="testimonial-media-img" alt="Review">
                             </div>
                         </div>
                     </div>
                     <div class="col-lg-4 mb-4">
                         <div class="single-testimonial-card">
-
                             <div class="user-info">
                                 <div class="d-flex align-items-center gap-2">
                                     <img src="images/user.webp" alt="testimonials-img" class="img-fluid d-block">
@@ -252,16 +311,15 @@
                                     <i class="fa-solid fa-calendar"></i>
                                 </div>
                             </div>
-                            <div class="testimonials-text">
-
-                                "موقع عبقري! جمع لي كل صالونات التجميل في مكان واحد، والبحث فيه سهل جداً والخدمات اللي
-                                اخترتها كانت قمة في الاحترافية."
+                            <div class="testimonial-media-wrapper"
+                                onclick="openMediaModal('video', 'images/video.mp4')">
+                                <img src="images/about.webp" class="testimonial-media-img" alt="Video">
+                                <div class="play-overlay-btn"><i class="fa-solid fa-play"></i></div>
                             </div>
                         </div>
                     </div>
                     <div class="col-lg-4 mb-4">
                         <div class="single-testimonial-card">
-
                             <div class="user-info">
                                 <div class="d-flex align-items-center gap-2">
                                     <img src="images/user.webp" alt="testimonials-img" class="img-fluid d-block">
@@ -281,10 +339,17 @@
                                     <i class="fa-solid fa-calendar"></i>
                                 </div>
                             </div>
-                            <div class="testimonials-text">
+                            <div class="testimonial-media-wrapper border-top">
+                                <div class="audio-player-wrapper">
+                                    <button
+                                        class="btn btn-blue play-audio-btn d-flex align-items-center justify-content-center flex-shrink-0"
+                                        onclick="toggleAudio(this)">
+                                        <i class="fa-solid fa-play"></i>
+                                    </button>
+                                    <img src="images/audio-waves.png" class="waveform-img" alt="Waveform">
+                                    <audio src="images/audio.mp3" onended="resetAudio(this)"></audio>
+                                </div>
 
-                                "موقع عبقري! جمع لي كل صالونات التجميل في مكان واحد، والبحث فيه سهل جداً والخدمات اللي
-                                اخترتها كانت قمة في الاحترافية."
                             </div>
                         </div>
                     </div>
@@ -313,10 +378,24 @@
             <!-- End Pagination -->
         </div>
     </div>
-
+    <!-- Start Media Modal -->
+    <div class="modal fade" id="mediaModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content bg-transparent border-0">
+                <div class="modal-header border-0 justify-content-end p-0 mb-2">
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"
+                        style="filter: invert(1);"></button>
+                </div>
+                <div class="modal-body text-center p-0" id="mediaModalBody">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Media Modal -->
 
     <!-- Start Footer -->
-    <footer style="background: linear-gradient(rgba(0, 47, 135, 0.9), rgba(0, 47, 135, 0.9)), url(images/footer-bg.webp) no-repeat center center;">
+    <footer
+        style="background: linear-gradient(rgba(0, 47, 135, 0.9), rgba(0, 47, 135, 0.9)), url(images/footer-bg.webp) no-repeat center center;">
         <div class="container">
 
 
@@ -371,10 +450,11 @@
         </div>
 
 
-        
+
         <div class="copyrights">
             <div class="container">
-                <div class="text-center">جميع الحقوق محفوظة لـ <span>مشغول</span> 2026 | <a href="https://targetlines.com/" target="_blank">شركة تارجت لاينز</a></div>
+                <div class="text-center">جميع الحقوق محفوظة لـ <span>مشغول</span> 2026 | <a
+                        href="https://targetlines.com/" target="_blank">شركة تارجت لاينز</a></div>
             </div>
         </div>
     </footer>

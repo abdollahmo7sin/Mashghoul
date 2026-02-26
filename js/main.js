@@ -144,7 +144,7 @@ jQuery(document).ready(function () {
     const testimonialsSwiper = new Swiper(".testimonials-swiper", {
         loop: true,
         draggable: true,
-        autoplay: true,
+        autoplay: false,
         spaceBetween: 45,
         centeredSlides: true,
         navigation: {
@@ -364,7 +364,7 @@ jQuery(document).ready(function () {
 // wow animation
 document.addEventListener("DOMContentLoaded", function () {
 
-    const singleElements = document.querySelectorAll('section ,h1, h2, h3');
+    const singleElements = document.querySelectorAll('section ,h1');
     singleElements.forEach(el => {
         el.classList.add('wow', 'fadeInUp');
     });
@@ -391,3 +391,74 @@ document.addEventListener("DOMContentLoaded", function () {
         }).init();
     }
 });
+
+// ==========================================
+// Open Media Modal
+// ==========================================
+function openMediaModal(type, src) {
+    const modalBody = document.getElementById('mediaModalBody');
+
+    // Detect Content Type
+    if (type === 'image') {
+        modalBody.innerHTML = `<img src="${src}" class="img-fluid rounded shadow-lg" style="max-height: 80vh; object-fit: contain;">`;
+    } else if (type === 'video') {
+        modalBody.innerHTML = `<video src="${src}" class="w-100 rounded shadow-lg" style="max-height: 80vh;" controls autoplay></video>`;
+    }
+
+    // The correct way to open the modal in Bootstrap without errors
+    const modalElement = document.getElementById('mediaModal');
+    const mediaModal = bootstrap.Modal.getOrCreateInstance(modalElement);
+    mediaModal.show();
+}
+
+// Clean the modal and stop the video when it is closed (with confirmation that it exists first)
+const mediaModalElement = document.getElementById('mediaModal');
+if (mediaModalElement) {
+    mediaModalElement.addEventListener('hidden.bs.modal', function () {
+        const modalBody = document.getElementById('mediaModalBody');
+        if (modalBody) {
+            modalBody.innerHTML = '';
+        }
+    });
+}
+
+// ==========================================
+// Play and Stop Audio (Dynamically without ID)
+// ==========================================
+function toggleAudio(btn) {
+    // Search for the audio file for this specific button
+    let audio = btn.parentElement.querySelector('audio');
+    let icon = btn.querySelector('i');
+
+    // Stop any other audio playing on the page so they don't interfere
+    document.querySelectorAll('audio').forEach(a => {
+        if (a !== audio) {
+            a.pause();
+            let otherBtn = a.parentElement.querySelector('.play-audio-btn i');
+            if (otherBtn) {
+                otherBtn.classList.remove('fa-pause');
+                otherBtn.classList.add('fa-play');
+            }
+        }
+    });
+
+    // Play or Stop Current Audio
+    if (audio.paused) {
+        audio.play();
+        icon.classList.remove('fa-play');
+        icon.classList.add('fa-pause');
+    } else {
+        audio.pause();
+        icon.classList.remove('fa-pause');
+        icon.classList.add('fa-play');
+    }
+}
+
+// Return the icon to the Play shape when the sound ends
+function resetAudio(audio) {
+    let icon = audio.parentElement.querySelector('.play-audio-btn i');
+    if (icon) {
+        icon.classList.remove('fa-pause');
+        icon.classList.add('fa-play');
+    }
+}

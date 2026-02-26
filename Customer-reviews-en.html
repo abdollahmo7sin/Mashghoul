@@ -71,7 +71,8 @@
                     <a href="#" class="header-icon search-icon"><i class="fa-light fa-magnifying-glass"></i></a>
                     <a href="Favourites-en.html" class="header-icon wishlist-icon"><i class="fa-light fa-heart"></i></a>
                     <a href="login-en.html" class="header-icon user-icon"><i class="fa-light fa-user"></i></a>
-                    <a href="set-location-en.html" class="header-icon location-icon"><i class="fa-light fa-location-dot"></i></a>
+                    <a href="set-location-en.html" class="header-icon location-icon"><i
+                            class="fa-light fa-location-dot"></i></a>
                     <a href="Customer-reviews.html" class="lang-switcher">Ar</a>
                 </div>
 
@@ -121,7 +122,7 @@
                                 <div class="d-flex align-items-center gap-2">
                                     <img src="images/user.webp" alt="testimonials-img" class="img-fluid d-block">
                                     <div class="user-rate-holder">
-                                        <div class="name">Pardis Walid</div>
+                                        <div class="name">Bardees Walid</div>
                                         <div class="rate">
                                             <i class="fa-solid fa-star"></i>
                                             <i class="fa-solid fa-star"></i>
@@ -138,19 +139,18 @@
                             </div>
                             <div class="testimonials-text">
 
-                                “A genius website! It brought together all the beauty salons in one place for me, and it is very easy to search and the services provided
-                                I chose her as she was the pinnacle of professionalism.”
+                                "A brilliant website! It brought together all the beauty salons in one place, and the search
+                                is very easy, and the services I chose were very professional."
                             </div>
                         </div>
                     </div>
                     <div class="col-lg-4 mb-4">
                         <div class="single-testimonial-card">
-
                             <div class="user-info">
                                 <div class="d-flex align-items-center gap-2">
                                     <img src="images/user.webp" alt="testimonials-img" class="img-fluid d-block">
                                     <div class="user-rate-holder">
-                                        <div class="name">Pardis Walid</div>
+                                        <div class="name">Bardees Walid</div>
                                         <div class="rate">
                                             <i class="fa-solid fa-star"></i>
                                             <i class="fa-solid fa-star"></i>
@@ -165,21 +165,19 @@
                                     <i class="fa-solid fa-calendar"></i>
                                 </div>
                             </div>
-                            <div class="testimonials-text">
-
-                                “A genius website! It brought together all the beauty salons in one place for me, and it is very easy to search and the services provided
-                                I chose her as she was the pinnacle of professionalism.”
+                            <div class="testimonial-media-wrapper"
+                                onclick="openMediaModal('image', 'images/about.webp')">
+                                <img src="images/about.webp" class="testimonial-media-img" alt="Review">
                             </div>
                         </div>
                     </div>
                     <div class="col-lg-4 mb-4">
                         <div class="single-testimonial-card">
-
                             <div class="user-info">
                                 <div class="d-flex align-items-center gap-2">
                                     <img src="images/user.webp" alt="testimonials-img" class="img-fluid d-block">
                                     <div class="user-rate-holder">
-                                        <div class="name">Pardis Walid</div>
+                                        <div class="name">Bardees Walid</div>
                                         <div class="rate">
                                             <i class="fa-solid fa-star"></i>
                                             <i class="fa-solid fa-star"></i>
@@ -194,21 +192,20 @@
                                     <i class="fa-solid fa-calendar"></i>
                                 </div>
                             </div>
-                            <div class="testimonials-text">
-
-                                “A genius website! It brought together all the beauty salons in one place for me, and it is very easy to search and the services provided
-                                I chose her as she was the pinnacle of professionalism.”
+                            <div class="testimonial-media-wrapper"
+                                onclick="openMediaModal('video', 'images/video.mp4')">
+                                <img src="images/about.webp" class="testimonial-media-img" alt="Video">
+                                <div class="play-overlay-btn"><i class="fa-solid fa-play"></i></div>
                             </div>
                         </div>
                     </div>
                     <div class="col-lg-4 mb-4">
                         <div class="single-testimonial-card">
-
                             <div class="user-info">
                                 <div class="d-flex align-items-center gap-2">
                                     <img src="images/user.webp" alt="testimonials-img" class="img-fluid d-block">
                                     <div class="user-rate-holder">
-                                        <div class="name">Pardis Walid</div>
+                                        <div class="name">Bardees Walid</div>
                                         <div class="rate">
                                             <i class="fa-solid fa-star"></i>
                                             <i class="fa-solid fa-star"></i>
@@ -223,68 +220,17 @@
                                     <i class="fa-solid fa-calendar"></i>
                                 </div>
                             </div>
-                            <div class="testimonials-text">
-
-                                “A genius website! It brought together all the beauty salons in one place for me, and it is very easy to search and the services provided
-                                I chose her as she was the pinnacle of professionalism.”
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 mb-4">
-                        <div class="single-testimonial-card">
-
-                            <div class="user-info">
-                                <div class="d-flex align-items-center gap-2">
-                                    <img src="images/user.webp" alt="testimonials-img" class="img-fluid d-block">
-                                    <div class="user-rate-holder">
-                                        <div class="name">Pardis Walid</div>
-                                        <div class="rate">
-                                            <i class="fa-solid fa-star"></i>
-                                            <i class="fa-solid fa-star"></i>
-                                            <i class="fa-solid fa-star"></i>
-                                            <i class="fa-solid fa-star"></i>
-                                            <i class="fa-solid fa-star"></i>
-                                        </div>
-                                    </div>
+                            <div class="testimonial-media-wrapper border-top">
+                                <div class="audio-player-wrapper">
+                                    <button
+                                        class="btn btn-blue play-audio-btn d-flex align-items-center justify-content-center flex-shrink-0"
+                                        onclick="toggleAudio(this)">
+                                        <i class="fa-solid fa-play"></i>
+                                    </button>
+                                    <img src="images/audio-waves.png" class="waveform-img" alt="Waveform">
+                                    <audio src="images/audio.mp3" onended="resetAudio(this)"></audio>
                                 </div>
-                                <div class="rview-date">
-                                    <span>Feb 2, 2026</span>
-                                    <i class="fa-solid fa-calendar"></i>
-                                </div>
-                            </div>
-                            <div class="testimonials-text">
 
-                                “A genius website! It brought together all the beauty salons in one place for me, and it is very easy to search and the services provided
-                                I chose her as she was the pinnacle of professionalism.”
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 mb-4">
-                        <div class="single-testimonial-card">
-
-                            <div class="user-info">
-                                <div class="d-flex align-items-center gap-2">
-                                    <img src="images/user.webp" alt="testimonials-img" class="img-fluid d-block">
-                                    <div class="user-rate-holder">
-                                        <div class="name">Pardis Walid</div>
-                                        <div class="rate">
-                                            <i class="fa-solid fa-star"></i>
-                                            <i class="fa-solid fa-star"></i>
-                                            <i class="fa-solid fa-star"></i>
-                                            <i class="fa-solid fa-star"></i>
-                                            <i class="fa-solid fa-star"></i>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="rview-date">
-                                    <span>Feb 2, 2026</span>
-                                    <i class="fa-solid fa-calendar"></i>
-                                </div>
-                            </div>
-                            <div class="testimonials-text">
-
-                                “A genius website! It brought together all the beauty salons in one place for me, and it is very easy to search and the services provided
-                                I chose her as she was the pinnacle of professionalism.”
                             </div>
                         </div>
                     </div>
@@ -314,9 +260,23 @@
         </div>
     </div>
 
-
+    <!-- Start Media Modal -->
+    <div class="modal fade" id="mediaModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content bg-transparent border-0">
+                <div class="modal-header border-0 justify-content-end p-0 mb-2">
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"
+                        style="filter: invert(1);"></button>
+                </div>
+                <div class="modal-body text-center p-0" id="mediaModalBody">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Media Modal -->
     <!-- Start Footer -->
-    <footer style="background: linear-gradient(rgba(0, 47, 135, 0.9), rgba(0, 47, 135, 0.9)), url(images/footer-bg.webp) no-repeat center center;">
+    <footer
+        style="background: linear-gradient(rgba(0, 47, 135, 0.9), rgba(0, 47, 135, 0.9)), url(images/footer-bg.webp) no-repeat center center;">
         <div class="container">
 
 
@@ -371,10 +331,11 @@
         </div>
 
 
-        
+
         <div class="copyrights">
             <div class="container">
-                <div class="text-center">All rights reserved to <span>Mashghol</span> 2026 | <a href="https://targetlines.com/" target="_blank">Target Lines Company</a></div>
+                <div class="text-center">All rights reserved to <span>Mashghol</span> 2026 | <a
+                        href="https://targetlines.com/" target="_blank">Target Lines Company</a></div>
             </div>
         </div>
     </footer>

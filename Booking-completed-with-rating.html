@@ -71,7 +71,8 @@
                     <a href="#" class="header-icon search-icon"><i class="fa-light fa-magnifying-glass"></i></a>
                     <a href="Favourites.html" class="header-icon wishlist-icon"><i class="fa-light fa-heart"></i></a>
                     <a href="login.html" class="header-icon user-icon"><i class="fa-light fa-user"></i></a>
-                    <a href="set-location.html" class="header-icon location-icon"><i class="fa-light fa-location-dot"></i></a>
+                    <a href="set-location.html" class="header-icon location-icon"><i
+                            class="fa-light fa-location-dot"></i></a>
                     <a href="Booking-completed-with-rating-en.html" class="lang-switcher">En</a>
                 </div>
 
@@ -134,10 +135,10 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-6 ">
+                <div class="col-lg-12 mt-4 ">
                     <div class="data-card">
                         <h3 class="data-card-title">بيانات المشغل</h3>
-                        <div class="data-list">
+                        <div class="data-list custom-data-list">
                             <div class="data-item">
                                 <span class="label"><i class="fa-solid fa-angles-left"></i> اسم المشغل</span>
                                 <span class="value">مركز الشخصيات المهمة للعناية الرجالية</span>
@@ -150,9 +151,17 @@
                                 <span class="label"><i class="fa-solid fa-angles-left"></i> الموقع الجغرافي</span>
                                 <a href="#" class="value text-danger text-decoration-underline">عرض علي الخريطة</a>
                             </div>
-                            <div class="data-item">
-                                <span class="label"><i class="fa-solid fa-angles-left"></i> مواعيد العمل</span>
-                                <span class="value">يومياً: 11:00ص - 9:00م</span>
+                            <div class="data-item working-hours ">
+                                <span class="label flex-shrink-0"><i class="fa-solid fa-angles-left"></i> مواعيد
+                                    العمل</span>
+                                <div class="d-flex flex-wrap">
+                                    <span class="value"> السبت: 10:00 صباحاً - 11:00 مساءً </span>
+                                    <span class="value">الأحد: 10:00 صباحاً - 11:00 مساءً</span>
+                                    <span class="value">الثلاثاء: 10:00 صباحاً - 11:00 مساءً</span>
+                                    <span class="value">الأربعاء: 10:00 صباحاً - 11:00 مساءً</span>
+                                    <span class="value">الخميس: 10:00 صباحاً - 11:00 مساءً</span>
+                                </div>
+
                             </div>
                             <div class="data-item">
                                 <span class="label"><i class="fa-solid fa-angles-left"></i> اسم الكرسي</span>
@@ -161,6 +170,7 @@
                         </div>
                     </div>
                 </div>
+
 
 
             </div>
@@ -307,19 +317,22 @@
 
 
             <div class="rate-service mt-5 text-center">
-                <button type="button" class="btn btn-green py-2 px-5" data-bs-toggle="modal" data-bs-target="#rating-modal">تقييم الخدمة</button>
+                <button type="button" class="btn btn-green py-2 px-5" data-bs-toggle="modal"
+                    data-bs-target="#rating-modal">تقييم الخدمة</button>
             </div>
         </div>
     </div>
 
 
     <!-- Rating Modal -->
-    <div class="modal fade custom-bootstrap-modal" id="rating-modal" tabindex="-1" aria-labelledby="ratingModalLabel" aria-hidden="true">
+    <div class="modal fade custom-bootstrap-modal" id="rating-modal" tabindex="-1" aria-labelledby="ratingModalLabel"
+        aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
                 <div class="modal-header d-flex justify-content-center position-relative">
                     <h3 class="modal-title w-100 text-center" id="ratingModalLabel">تقييم الخدمة</h3>
-                    <button type="button" class="btn-close position-absolute start-0 ms-3" data-bs-dismiss="modal" aria-label="Close"></button>
+                    <button type="button" class="btn-close position-absolute start-0 ms-3" data-bs-dismiss="modal"
+                        aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
                     <!-- Service Rating -->
@@ -355,7 +368,8 @@
                     </div>
                 </div>
                 <div class="modal-footer d-flex flex-row justify-content-center gap-3">
-                    <button type="button" class="btn btn-green modal-confirm px-5" data-bs-dismiss="modal">تأكيد</button>
+                    <button type="button" class="btn btn-green modal-confirm px-5"
+                        data-bs-dismiss="modal">تأكيد</button>
                     <button type="button" class="btn modal-cancel px-5" data-bs-dismiss="modal">إلغاء</button>
                 </div>
             </div>
@@ -423,7 +437,8 @@
 
         <div class="copyrights">
             <div class="container">
-                <div class="text-center">جميع الحقوق محفوظة لـ <span>مشغول</span> 2026 | <a href="https://targetlines.com/" target="_blank">شركة تارجت لاينز</a></div>
+                <div class="text-center">جميع الحقوق محفوظة لـ <span>مشغول</span> 2026 | <a
+                        href="https://targetlines.com/" target="_blank">شركة تارجت لاينز</a></div>
             </div>
         </div>
     </footer>
