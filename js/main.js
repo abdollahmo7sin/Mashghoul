@@ -95,6 +95,24 @@ jQuery(document).ready(function () {
         },
 
     });
+    const salonHeroSlider = new Swiper(".salon-hero-slider .swiper", {
+        loop: true,
+        draggable: true,
+        autoplay: true,
+        slidesPerView: 1,
+
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+        },
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+        },
+
+
+
+    });
 
 
 
@@ -405,7 +423,6 @@ function openMediaModal(type, src) {
         modalBody.innerHTML = `<video src="${src}" class="w-100 rounded shadow-lg" style="max-height: 80vh;" controls autoplay></video>`;
     }
 
-    // The correct way to open the modal in Bootstrap without errors
     const modalElement = document.getElementById('mediaModal');
     const mediaModal = bootstrap.Modal.getOrCreateInstance(modalElement);
     mediaModal.show();
@@ -462,3 +479,197 @@ function resetAudio(audio) {
         icon.classList.add('fa-play');
     }
 }
+
+// ==========================================
+// Category Filters Logic 
+// ==========================================
+document.addEventListener("DOMContentLoaded", function () {
+    const filterButtons = document.querySelectorAll('.category-filters button');
+
+    if (filterButtons.length > 0) {
+        filterButtons.forEach(button => {
+            button.addEventListener('click', function () {
+                // Remove active styling from all buttons
+                filterButtons.forEach(btn => {
+                    btn.classList.remove('active');
+                });
+
+                // Add active styling to clicked button
+                this.classList.add('active');
+
+                // Get filter value
+                const filterValue = this.getAttribute('data-filter');
+
+                // Find nearest services list to this filter group (allows multiple chairs to have separate filters if needed, or global)
+                const servicesContainer = this.closest('.tab-pane') || document;
+                const serviceCards = servicesContainer.querySelectorAll('.services-list > div.service-card');
+
+                serviceCards.forEach((card) => {
+                    const category = card.getAttribute('data-category');
+
+                    if (filterValue === 'all' || filterValue === category) {
+                        card.style.display = 'block';
+                    } else {
+                        card.style.display = 'none';
+                    }
+                });
+            });
+        });
+    }
+});
+
+// ==========================================
+// Optional Products Logic
+// ==========================================
+document.addEventListener("DOMContentLoaded", function () {
+    const qtyButtons = document.querySelectorAll('.product-qty-btn');
+
+    qtyButtons.forEach(btn => {
+        btn.addEventListener('click', function (e) {
+            e.preventDefault();
+
+            // Find the closest service card to scope the price updates
+            const serviceCard = this.closest('.service-card');
+            if (!serviceCard) return;
+
+            const isAdd = this.classList.contains('add-btn');
+            const itemContainer = this.closest('.d-flex.align-items-center.justify-content-end');
+            const qtyDisplay = itemContainer.querySelector('.product-qty-display');
+
+            if (!qtyDisplay) return; // Safeguard if not found
+
+            let currentQty = parseInt(qtyDisplay.innerText) || 0;
+            const productPrice = parseInt(this.getAttribute('data-price')) || 0;
+
+            // Handle Logic (Max 1)
+            let qtyChanged = false;
+            let priceChange = 0;
+
+            if (isAdd && currentQty < 1) {
+                currentQty++;
+                priceChange = productPrice;
+                qtyChanged = true;
+
+                // Styling updates
+                this.classList.remove('bg-blue');
+                this.classList.add('bg-secondary'); // Disable add styling visually
+
+                const removeBtn = itemContainer.querySelector('.remove-btn');
+                if (removeBtn) {
+                    removeBtn.classList.remove('bg-secondary');
+                    removeBtn.classList.add('bg-blue'); // Enable remove styling visually
+                }
+            } else if (!isAdd && currentQty > 0) {
+                currentQty--;
+                priceChange = -productPrice;
+                qtyChanged = true;
+
+                // Styling updates
+                this.classList.remove('bg-blue');
+                this.classList.add('bg-secondary'); // Disable remove styling visually
+
+                const addBtn = itemContainer.querySelector('.add-btn');
+                if (addBtn) {
+                    addBtn.classList.remove('bg-secondary');
+                    addBtn.classList.add('bg-blue'); // Enable add styling visually
+                }
+            }
+
+            if (qtyChanged) {
+                // Update specific product display
+                qtyDisplay.innerText = currentQty;
+
+                // Update Master Service Price
+                const priceElement = serviceCard.querySelector('.service-price');
+                if (priceElement) {
+                    // Check if base price is stored, if not store it
+                    let basePrice = parseInt(priceElement.getAttribute('data-base'));
+                    if (isNaN(basePrice)) {
+                        basePrice = parseInt(priceElement.innerText);
+                        priceElement.setAttribute('data-base', basePrice);
+                    }
+
+                    // Calculate current total from base + all active products in this service card
+                    let totalExtras = 0;
+                    const allQtyDisplays = serviceCard.querySelectorAll('.product-qty-display');
+                    allQtyDisplays.forEach(display => {
+                        const qty = parseInt(display.innerText) || 0;
+                        if (qty > 0) {
+                            // Find corresponding add button to get its price
+                            const btn = display.closest('.d-flex').querySelector('.add-btn');
+                            if (btn) {
+                                totalExtras += parseInt(btn.getAttribute('data-price')) || 0;
+                            }
+                        }
+                    });
+
+                    const newTotal = basePrice + totalExtras;
+
+                    // Keep the SA icon
+                    const iconHtml = priceElement.innerHTML.match(/<i.*?<\/i>/);
+                    priceElement.innerHTML = `${newTotal} ${iconHtml ? iconHtml[0] : ''}`;
+                }
+
+                // Update grand total globally
+                if (typeof updateGrandTotal === 'function') {
+                    updateGrandTotal();
+                }
+            }
+        });
+    });
+
+    // --- Grand Total Calculation Logic ---
+    function updateGrandTotal() {
+        let grandTotal = 0;
+        const checkedServices = document.querySelectorAll('.service-checkbox:checked');
+        checkedServices.forEach(checkbox => {
+            const card = checkbox.nextElementSibling;
+            if (card && card.classList.contains('service-card')) {
+                const priceElement = card.querySelector('.service-price');
+                if (priceElement) {
+                    grandTotal += parseInt(priceElement.innerText) || 0;
+                }
+            }
+        });
+
+        const grandTotalElement = document.querySelector('.booking-total');
+        if (grandTotalElement) {
+            const iconHtml = grandTotalElement.innerHTML.match(/<i.*?<\/i>/);
+            grandTotalElement.innerHTML = `${grandTotal} ${iconHtml ? iconHtml[0] : '<i class="icon-saudi_riyal"></i>'}`;
+        }
+    }
+
+    // Attach change event to all service checkboxes to recalculate grand total on select/deselect
+    const serviceCheckboxes = document.querySelectorAll('.service-checkbox');
+    serviceCheckboxes.forEach(cb => {
+        cb.addEventListener('change', updateGrandTotal);
+    });
+
+    // Initialize grand total when page loads
+    updateGrandTotal();
+
+    // --- Accordion Plus/Minus Icon Toggle ---
+    const accordions = document.querySelectorAll('.collapse');
+    accordions.forEach(acc => {
+        acc.addEventListener('show.bs.collapse', function () {
+            const toggleBtn = document.querySelector(`[data-bs-target="#${this.id}"]`);
+            if (toggleBtn) {
+                const icon = toggleBtn.querySelector('.accordion-icon');
+                if (icon) {
+                    icon.classList.remove('fa-plus');
+                    icon.classList.add('fa-minus');
+                }
+            }
+        });
+        acc.addEventListener('hide.bs.collapse', function () {
+            const toggleBtn = document.querySelector(`[data-bs-target="#${this.id}"]`);
+            if (toggleBtn) {
+                const icon = toggleBtn.querySelector('.accordion-icon');
+                if (icon) {
+                    icon.classList.remove('fa-minus');
+                    icon.classList.add('fa-plus');
+                }
+            }
+        });
+    });
+});

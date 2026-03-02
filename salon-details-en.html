@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en" dir="ltr">
 
 <head>
@@ -58,12 +58,13 @@
 
 
                         <li>
-                            <a href="faqs-en.html">Frequently Asked Questions</a>
+                            <a href="faqs-en.html">FAQs</a>
                         </li>
 
                         <li>
                             <a href="contact-en.html">Contact us</a>
                         </li>
+                        <li><a href="join-us-en.html">Join as a service provider</a></li>
                     </ul>
                 </nav>
 
@@ -71,7 +72,8 @@
                     <a href="#" class="header-icon search-icon"><i class="fa-light fa-magnifying-glass"></i></a>
                     <a href="Favourites-en.html" class="header-icon wishlist-icon"><i class="fa-light fa-heart"></i></a>
                     <a href="login-en.html" class="header-icon user-icon"><i class="fa-light fa-user"></i></a>
-                    <a href="set-location-en.html" class="header-icon location-icon"><i class="fa-light fa-location-dot"></i></a>
+                    <a href="set-location-en.html" class="header-icon location-icon"><i
+                            class="fa-light fa-location-dot"></i></a>
                     <a href="salon-details.html" class="lang-switcher">Ar</a>
                 </div>
 
@@ -89,7 +91,7 @@
 
     <!-- Start Breadcrumb -->
     <div class="container">
-        <nav style="--bs-breadcrumb-divider: '|';" aria-label="breadcrumb" class="my-4">
+        <nav aria-label="breadcrumb" class="my-4 custom-breadcrumb">
             <ol class="breadcrumb">
                 <li class="breadcrumb-item"><a href="index-en.html">Home</a></li>
                 <li class="breadcrumb-item"><a href="#">Men's spa</a></li>
@@ -103,10 +105,28 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-5 mb-4 mb-lg-0">
-                    <img src="images/about.webp" class="img-fluid salon-hero-img" alt="VIP Men's Care Center">
+                    <div class="salon-hero-slider">
+                        <div class="swiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <img src="images/about.webp" class="img-fluid salon-hero-img" alt="">
+
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="images/about.webp" class="img-fluid salon-hero-img" alt="">
+
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="images/about.webp" class="img-fluid salon-hero-img" alt="">
+
+                                </div>
+                            </div>
+                            <div class="swiper-pagination"></div>
+                        </div>
+                    </div>
                 </div>
                 <div class="col-lg-7">
-                    <h1 class="salon-hero-title">VIP Men's Care Center</h1>
+                    <h1 class="salon-hero-title">Service Provider</h1>
                     <div class="salon-stats">
                         <div class="stat-card">
                             <div class="stat-label">Average ratings</div>
@@ -120,7 +140,7 @@
                             </div>
                         </div>
                         <div class="stat-card">
-                            <div class="stat-label"> Far away from you </div>
+                            <div class="stat-label">Far away from you approx</div>
                             <div class="stat-number">19.<span>4</span> <span>km</span></div>
                             <div class="stat-icon">
                                 <i class="fa-solid fa-location-dot"></i>
@@ -132,17 +152,225 @@
             </div>
         </div>
     </div>
+    <div class="gallery-section mt-5 mb-5">
+        <div class="container">
+            <div class="text-center">
+                <div class="section-title fz32">Gallery</div>
+            </div>
+            <div class="gallery-section-wrapper mb-4">
+                <h3 class="data-card-title">Photos</h3>
+                <div class="row">
+                    <div class="col-lg-3 col-6 mb-4">
+                        <div class="single-testimonial-card p-0 border-0 h-100 bg-transparent shadow-none">
+                            <div class="testimonial-media-wrapper m-0 rounded-4 overflow-hidden shadow-sm h-100"
+                                onclick="openMediaModal('image', 'images/about.webp')">
+                                <img src="images/about.webp" class="testimonial-media-img" alt="Gallery">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-6 mb-4">
+                        <div class="single-testimonial-card p-0 border-0 h-100 bg-transparent shadow-none">
+                            <div class="testimonial-media-wrapper m-0 rounded-4 overflow-hidden shadow-sm h-100"
+                                onclick="openMediaModal('image', 'images/about.webp')">
+                                <img src="images/about.webp" class="testimonial-media-img" alt="Gallery">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-6 mb-4">
+                        <div class="single-testimonial-card p-0 border-0 h-100 bg-transparent shadow-none">
+                            <div class="testimonial-media-wrapper m-0 rounded-4 overflow-hidden shadow-sm h-100"
+                                onclick="openMediaModal('image', 'images/about.webp')">
+                                <img src="images/about.webp" class="testimonial-media-img" alt="Gallery">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-6 mb-4">
+                        <div class="single-testimonial-card p-0 border-0 h-100 bg-transparent shadow-none">
+                            <div class="testimonial-media-wrapper m-0 rounded-4 overflow-hidden shadow-sm h-100"
+                                onclick="openMediaModal('image', 'images/about.webp')">
+                                <img src="images/about.webp" class="testimonial-media-img" alt="Gallery">
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="gallery-section-wrapper mb-4">
+                <h3 class="data-card-title">Videos</h3>
+                <div class="row">
+
+                    <div class="col-lg-3 col-6 mb-4">
+                        <div class="single-testimonial-card p-0 border-0 h-100 bg-transparent shadow-none">
+                            <div class="testimonial-media-wrapper m-0 rounded-4 overflow-hidden shadow-sm h-100"
+                                onclick="openMediaModal('video', 'images/video.mp4')">
+                                <img src="images/about.webp" class="testimonial-media-img" alt="Gallery">
+                                <div class="play-overlay-btn">
+                                    <i class="fa-solid fa-play"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-6 mb-4">
+                        <div class="single-testimonial-card p-0 border-0 h-100 bg-transparent shadow-none">
+                            <div class="testimonial-media-wrapper m-0 rounded-4 overflow-hidden shadow-sm h-100"
+                                onclick="openMediaModal('video', 'images/video.mp4')">
+                                <img src="images/about.webp" class="testimonial-media-img" alt="Gallery">
+                                <div class="play-overlay-btn">
+                                    <i class="fa-solid fa-play"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-6 mb-4">
+                        <div class="single-testimonial-card p-0 border-0 h-100 bg-transparent shadow-none">
+                            <div class="testimonial-media-wrapper m-0 rounded-4 overflow-hidden shadow-sm h-100"
+                                onclick="openMediaModal('video', 'images/video.mp4')">
+                                <img src="images/about.webp" class="testimonial-media-img" alt="Gallery">
+                                <div class="play-overlay-btn">
+                                    <i class="fa-solid fa-play"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-6 mb-4">
+                        <div class="single-testimonial-card p-0 border-0 h-100 bg-transparent shadow-none">
+                            <div class="testimonial-media-wrapper m-0 rounded-4 overflow-hidden shadow-sm h-100"
+                                onclick="openMediaModal('video', 'images/video.mp4')">
+                                <img src="images/about.webp" class="testimonial-media-img" alt="Gallery">
+                                <div class="play-overlay-btn">
+                                    <i class="fa-solid fa-play"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+
+            <div class="gallery-section-wrapper mb-4">
+                <h3 class="data-card-title">Audio Clips</h3>
+                <div class="row">
+
+                    <div class="col-lg-3 col-6 mb-4">
+                        <div class="single-testimonial-card p-0 border-0 h-100 bg-transparent shadow-none">
+                            <div
+                                class="testimonial-media-wrapper testimonial-media-wrapper--dark m-0 rounded-4 overflow-hidden shadow-sm h-100">
+                                <div class="audio-player-wrapper">
+                                    <button
+                                        class="btn btn-blue play-audio-btn d-flex align-items-center justify-content-center"
+                                        onclick="toggleAudio(this)">
+                                        <i class="fa-solid fa-play"></i>
+                                    </button>
+                                    <img src="images/audio-waves.png" class="waveform-img" alt="Waveform">
+                                    <audio src="images/audio.mp3" onended="resetAudio(this)"></audio>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-6 mb-4">
+                        <div class="single-testimonial-card p-0 border-0 h-100 bg-transparent shadow-none">
+                            <div
+                                class="testimonial-media-wrapper testimonial-media-wrapper--dark m-0 rounded-4 overflow-hidden shadow-sm h-100">
+                                <div class="audio-player-wrapper">
+                                    <button
+                                        class="btn btn-blue play-audio-btn d-flex align-items-center justify-content-center"
+                                        onclick="toggleAudio(this)">
+                                        <i class="fa-solid fa-play"></i>
+                                    </button>
+                                    <img src="images/audio-waves.png" class="waveform-img" alt="Waveform">
+                                    <audio src="images/audio.mp3" onended="resetAudio(this)"></audio>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-6 mb-4">
+                        <div class="single-testimonial-card p-0 border-0 h-100 bg-transparent shadow-none">
+                            <div
+                                class="testimonial-media-wrapper testimonial-media-wrapper--dark m-0 rounded-4 overflow-hidden shadow-sm h-100">
+                                <div class="audio-player-wrapper">
+                                    <button
+                                        class="btn btn-blue play-audio-btn d-flex align-items-center justify-content-center"
+                                        onclick="toggleAudio(this)">
+                                        <i class="fa-solid fa-play"></i>
+                                    </button>
+                                    <img src="images/audio-waves.png" class="waveform-img" alt="Waveform">
+                                    <audio src="images/audio.mp3" onended="resetAudio(this)"></audio>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-6 mb-4">
+                        <div class="single-testimonial-card p-0 border-0 h-100 bg-transparent shadow-none">
+                            <div
+                                class="testimonial-media-wrapper testimonial-media-wrapper--dark m-0 rounded-4 overflow-hidden shadow-sm h-100">
+                                <div class="audio-player-wrapper">
+                                    <button
+                                        class="btn btn-blue play-audio-btn d-flex align-items-center justify-content-center"
+                                        onclick="toggleAudio(this)">
+                                        <i class="fa-solid fa-play"></i>
+                                    </button>
+                                    <img src="images/audio-waves.png" class="waveform-img" alt="Waveform">
+                                    <audio src="images/audio.mp3" onended="resetAudio(this)"></audio>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="coupon-provider-section mt-5 mb-5">
+        <div class="container">
+            <h3 class="data-card-title  mb-4">Service Provider Coupons</h3>
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="data-card">
+                        <div class="data-list services-data-list mb-2">
+                            <div class="data-item   ">
+                                <span class="label"><i class="fa-solid fa-angles-right text-green me-2"></i>
+                                    Discount Code</span>
+                                <span class="value">Sono</span>
+                            </div>
+                            <div class="data-item">
+                                <span class="label"><i class="fa-solid fa-angles-right text-green me-2"></i>
+                                    Discount Type</span>
+                                <span class="value">Fixed</span>
+                            </div>
+                            <div class="data-item">
+                                <span class="label"><i class="fa-solid fa-angles-right text-green me-2"></i>
+                                    Discount Value</span>
+                                <span class="value">50 <i class="icon-saudi_riyal"></i></span>
+                            </div>
+                            <div class="data-item">
+                                <span class="label"><i class="fa-solid fa-angles-right text-green me-2"></i>
+                                    Expiration Date</span>
+                                <span class="value">12/9/2027</span>
+                            </div>
+                        </div>
+                        <div class="d-flex align-items-center justify-content-between mt-4 border-top pt-3">
+                            <span class="text-danger">Terms and conditions apply</span>
+                            <button class="btn btn-blue py-2 px-5 fz16  ">Copy</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <div class="salon-services-section">
         <div class="container">
             <ul class="nav nav-tabs chair-tabs" role="tablist">
                 <li class="nav-item" role="presentation">
                     <button class="nav-link active" data-bs-toggle="tab" data-bs-target="#chair-1" type="button"
-                        role="tab">The first chair</button>
+                        role="tab">First Chair</button>
                 </li>
                 <li class="nav-item" role="presentation">
-                    <button class="nav-link" data-bs-toggle="tab" data-bs-target="#chair-2" type="button" role="tab">The
-                        second chair</button>
+                    <button class="nav-link" data-bs-toggle="tab" data-bs-target="#chair-2" type="button"
+                        role="tab">Second Chair</button>
                 </li>
             </ul>
 
@@ -154,69 +382,247 @@
                         <i class="fa-light fa-magnifying-glass"></i>
                     </div>
 
-                    <div class="services-list">
-                        <input type="radio" name="service" id="c1_s1" class="service-radio d-none" checked>
-                        <label class="service-card" for="c1_s1">
-                            <div class="service-card-header">
-                                <div class="service-name-wrap">
-                                    <div class="custom-radio">
-                                        <span class="radio-mark"></span>
-                                    </div>
-                                    <span class="service-name">Hairdressing</span>
-                                </div>
-                                <span class="service-duration">(Implementation time: 30 minutes)</span>
-                                <div class="service-price">750 <i class="icon-saudi_riyal"></i></div>
-                            </div>
-                            <p class="service-desc">There is a long-established fact that the readable content of a page
-                                It will distract the reader from focusing on the external appearance of the text or the
-                                way the paragraphs are placed on the page on which
-                                He reads it. Therefore, the Lorem Ipsum method is used because it gives a normal
-                                distribution</p>
-                        </label>
+                    <!-- Category Filters -->
+                    <div class="category-filters d-flex align-items-center gap-2 mb-4 overflow-auto pb-1">
+                        <button class="btn category-filter-btn active" data-filter="all">All</button>
+                        <button class="btn category-filter-btn" data-filter="haircut">Haircut</button>
+                        <button class="btn category-filter-btn" data-filter="beard">Beard Shaving</button>
+                    </div>
 
-                        <input type="radio" name="service" id="c1_s2" class="service-radio d-none">
-                        <label class="service-card" for="c1_s2">
-                            <div class="service-card-header">
-                                <div class="service-name-wrap">
-                                    <div class="custom-radio">
-                                        <span class="radio-mark"></span>
-                                    </div>
-                                    <span class="service-name">Hair dyeing</span>
+                    <div class="services-list">
+                        <input type="checkbox" name="service" id="c1_s1" class="service-checkbox d-none">
+                        <div class="service-card animate__animated" data-category="haircut">
+                            <div class="d-flex gap-3 mb-3">
+                                <div class="flex-shrink-0">
+                                    <img src="images/about.webp" class="rounded-3 object-fit-cover service-img"
+                                        alt="Service">
                                 </div>
-                                <span class="service-duration">(Implementation time: 45 minutes)</span>
-                                <div class="service-price" data-base="750">750 <i class="icon-saudi_riyal"></i></div>
-                            </div>
-                            <p class="service-desc">There is a long-established fact that the readable content of a page
-                                It will distract the reader from focusing on the external appearance of the text or the
-                                way the paragraphs are placed on the page on which
-                                He reads it. Therefore, the Lorem Ipsum method is used because it gives a normal
-                                distribution</p>
-                            <div class="optional-products">
-                                <h4 class="optional-products-title">Optional products</h4>
-                                <div class="products-list">
-                                    <div class="product-item">
-                                        <div class="product-info">
-                                            <div class="product-name">L'Oreal Casting Chestnut dye</div>
-                                            <div class="product-detail">Conqueror 500 | 72 ml</div>
-                                        </div>
-                                        <div class="product-price">250 <i class="icon-saudi_riyal"></i></div>
-                                        <div class="product-qty-btn add-btn" role="button" data-price="250">
-                                            <i class="fa-solid fa-plus"></i>
-                                        </div>
+                                <div class="flex-grow-1">
+                                    <div class="service-name-wrap mb-1">
+                                        <span class="service-name fw-bold">Hair Styling</span>
                                     </div>
-                                    <div class="product-item">
-                                        <div class="product-info">
-                                            <div class="product-name">L'Oreal Casting Chestnut dye</div>
-                                            <div class="product-detail">Conqueror 500 | 72 ml</div>
-                                        </div>
-                                        <div class="product-price">250 <i class="icon-saudi_riyal"></i></div>
-                                        <div class="product-qty-btn remove-btn" role="button" data-price="250">
-                                            <i class="fa-solid fa-minus"></i>
-                                        </div>
-                                    </div>
+                                    <div class="service-duration mb-2">( Execution time 30 mins )</div>
+                                    <p class="service-desc text-muted m-0">It is a long established fact that a
+                                        reader will be distracted by the readable content of a page when looking at
+                                        its layout.</p>
                                 </div>
                             </div>
-                        </label>
+
+                            <div class="optional-products mt-3 rounded-4 bg-white">
+                                <div class="d-flex align-items-center justify-content-between p-3 optional-products-toggle collapsed"
+                                    data-bs-toggle="collapse" data-bs-target="#optProd_c1_s1" aria-expanded="false"
+                                    aria-controls="optProd_c1_s1">
+                                    <h4 class="optional-products-title m-0 border-0 p-0 fs-6 fw-bold text-dark">
+                                        Optional Products</h4>
+                                    <i class="fa-solid fa-plus text-blue accordion-icon"></i>
+                                </div>
+                                <div class="collapse" id="optProd_c1_s1">
+                                    <div class="products-list px-3 pb-3">
+                                        <div
+                                            class="product-item d-flex align-items-center py-3 border-bottom border-light">
+                                            <div class="d-flex align-items-center gap-3 w-50">
+                                                <img src="images/about.webp"
+                                                    class="rounded-3 object-fit-cover product-img" alt="Product">
+                                                <div class="product-info">
+                                                    <div class="product-name fw-bold text-dark">L'Oreal Casting
+                                                        Chestnut Dye</div>
+                                                    <div class="product-detail text-muted">Light 500 | 72ml</div>
+                                                </div>
+                                            </div>
+                                            <div class="product-price fw-bold text-blue w-25 text-center">250 <i
+                                                    class="icon-saudi_riyal"></i></div>
+                                            <div class="d-flex align-items-center justify-content-end gap-3 w-25">
+                                                <div class="product-qty-btn add-btn bg-blue border-0 d-flex align-items-center justify-content-center"
+                                                    role="button" data-price="250">
+                                                    <i class="fa-solid fa-plus text-white"></i>
+                                                </div>
+                                                <span class="product-qty-display fw-bold fs-6">0</span>
+                                                <div class="product-qty-btn remove-btn border-0 d-flex align-items-center justify-content-center bg-secondary"
+                                                    role="button" data-price="250">
+                                                    <i class="fa-solid fa-minus text-white"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div
+                                class="d-flex align-items-center justify-content-between mt-3 pt-3 border-top border-light">
+                                <div class="service-price m-0 px-2" data-base="750">750 <i class="icon-saudi_riyal"></i>
+                                </div>
+                                <label
+                                    class="btn btn-blue px-4 py-2 rounded-5 d-flex align-items-center gap-2 m-0 select-service-btn"
+                                    for="c1_s1">
+                                    <i class="fa-regular fa-circle-check fw-normal"></i>
+                                    <span class="btn-text">Select Service</span>
+                                </label>
+                            </div>
+                        </div>
+
+                        <input type="checkbox" name="service" id="c1_s2" class="service-checkbox d-none">
+                        <div class="service-card animate__animated" data-category="beard">
+                            <div class="d-flex gap-3 mb-3">
+                                <div class="flex-shrink-0">
+                                    <img src="images/about.webp" class="rounded-3 object-fit-cover service-img"
+                                        alt="Service">
+                                </div>
+                                <div class="flex-grow-1">
+                                    <div class="service-name-wrap mb-1">
+                                        <span class="service-name fw-bold">Hair Dyeing</span>
+                                    </div>
+                                    <div class="service-duration mb-2">( Execution time 45 mins )</div>
+                                    <p class="service-desc text-muted m-0">It is a long established fact that a
+                                        reader will be distracted by the readable content of a page when looking at
+                                        its layout.</p>
+                                </div>
+                            </div>
+
+                            <div class="optional-products mt-3 rounded-4 bg-white">
+                                <div class="d-flex align-items-center justify-content-between p-3 optional-products-toggle collapsed"
+                                    data-bs-toggle="collapse" data-bs-target="#optProd_c1_s2" aria-expanded="false"
+                                    aria-controls="optProd_c1_s2">
+                                    <h4 class="optional-products-title m-0 border-0 p-0 fs-6 fw-bold text-dark">
+                                        Optional Products</h4>
+                                    <i class="fa-solid fa-plus text-blue accordion-icon"></i>
+                                </div>
+                                <div class="collapse" id="optProd_c1_s2">
+                                    <div class="products-list px-3 pb-3">
+                                        <div
+                                            class="product-item d-flex align-items-center py-3 border-bottom border-light">
+                                            <div class="d-flex align-items-center gap-3 w-50">
+                                                <img src="images/about.webp"
+                                                    class="rounded-3 object-fit-cover product-img" alt="Product">
+                                                <div class="product-info">
+                                                    <div class="product-name fw-bold text-dark">L'Oreal Casting
+                                                        Chestnut Dye</div>
+                                                    <div class="product-detail text-muted">Light 500 | 72ml</div>
+                                                </div>
+                                            </div>
+                                            <div class="product-price fw-bold text-blue w-25 text-center">250 <i
+                                                    class="icon-saudi_riyal"></i></div>
+                                            <div class="d-flex align-items-center justify-content-end gap-3 w-25">
+                                                <div class="product-qty-btn add-btn bg-blue border-0 d-flex align-items-center justify-content-center"
+                                                    role="button" data-price="250">
+                                                    <i class="fa-solid fa-plus text-white"></i>
+                                                </div>
+                                                <span class="product-qty-display fw-bold fs-6">0</span>
+                                                <div class="product-qty-btn remove-btn border-0 d-flex align-items-center justify-content-center bg-secondary"
+                                                    role="button" data-price="250">
+                                                    <i class="fa-solid fa-minus text-white"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="product-item d-flex align-items-center pt-3">
+                                            <div class="d-flex align-items-center gap-3 w-50">
+                                                <img src="images/about.webp"
+                                                    class="rounded-3 object-fit-cover product-img" alt="Product">
+                                                <div class="product-info">
+                                                    <div class="product-name fw-bold text-dark">L'Oreal Casting
+                                                        Chestnut Dye</div>
+                                                    <div class="product-detail text-muted">Light 500 | 72ml</div>
+                                                </div>
+                                            </div>
+                                            <div class="product-price fw-bold text-blue w-25 text-center">250 <i
+                                                    class="icon-saudi_riyal"></i></div>
+                                            <div class="d-flex align-items-center justify-content-end gap-3 w-25">
+                                                <div class="product-qty-btn add-btn bg-blue border-0 d-flex align-items-center justify-content-center"
+                                                    role="button" data-price="250">
+                                                    <i class="fa-solid fa-plus text-white"></i>
+                                                </div>
+                                                <span class="product-qty-display fw-bold fs-6">0</span>
+                                                <div class="product-qty-btn remove-btn border-0 d-flex align-items-center justify-content-center bg-secondary"
+                                                    role="button" data-price="250">
+                                                    <i class="fa-solid fa-minus text-white"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div
+                                class="d-flex align-items-center justify-content-between mt-3 pt-3 border-top border-light">
+                                <div class="service-price m-0 px-2" data-base="750">750 <i class="icon-saudi_riyal"></i>
+                                </div>
+                                <label
+                                    class="btn btn-blue px-4 py-2 rounded-5 d-flex align-items-center gap-2 m-0 select-service-btn"
+                                    for="c1_s2">
+                                    <i class="fa-regular fa-circle-check fw-normal"></i>
+                                    <span class="btn-text">Select Service</span>
+                                </label>
+                            </div>
+                        </div>
+
+                        <input type="checkbox" name="service" id="c1_s3" class="service-checkbox d-none">
+                        <div class="service-card animate__animated" data-category="haircut">
+                            <div class="d-flex gap-3 mb-3">
+                                <div class="flex-shrink-0">
+                                    <img src="images/about.webp" class="rounded-3 object-fit-cover service-img"
+                                        alt="Service">
+                                </div>
+                                <div class="flex-grow-1">
+                                    <div class="service-name-wrap mb-1">
+                                        <span class="service-name fw-bold">Cut and Blow-dry</span>
+                                    </div>
+                                    <div class="service-duration mb-2">( Execution time 60 mins )</div>
+                                    <p class="service-desc text-muted m-0">It is a long established fact that a
+                                        reader will be distracted by the readable content of a page when looking at
+                                        its layout.</p>
+                                </div>
+                            </div>
+
+                            <div class="optional-products mt-3 rounded-4 bg-white">
+                                <div class="d-flex align-items-center justify-content-between p-3 optional-products-toggle collapsed"
+                                    data-bs-toggle="collapse" data-bs-target="#optProd_c1_s3" aria-expanded="false"
+                                    aria-controls="optProd_c1_s3">
+                                    <h4 class="optional-products-title m-0 border-0 p-0 fs-6 fw-bold text-dark">
+                                        Optional Products</h4>
+                                    <i class="fa-solid fa-plus text-blue accordion-icon"></i>
+                                </div>
+                                <div class="collapse" id="optProd_c1_s3">
+                                    <div class="products-list px-3 pb-3">
+                                        <div
+                                            class="product-item d-flex align-items-center py-3 border-bottom border-light">
+                                            <div class="d-flex align-items-center gap-3 w-50">
+                                                <img src="images/about.webp"
+                                                    class="rounded-3 object-fit-cover product-img" alt="Product">
+                                                <div class="product-info">
+                                                    <div class="product-name fw-bold text-dark">Strong Hold Gel
+                                                    </div>
+                                                    <div class="product-detail text-muted">150 ml</div>
+                                                </div>
+                                            </div>
+                                            <div class="product-price fw-bold text-blue w-25 text-center">80 <i
+                                                    class="icon-saudi_riyal"></i></div>
+                                            <div class="d-flex align-items-center justify-content-end gap-3 w-25">
+                                                <div class="product-qty-btn add-btn bg-blue border-0 d-flex align-items-center justify-content-center"
+                                                    role="button" data-price="80">
+                                                    <i class="fa-solid fa-plus text-white"></i>
+                                                </div>
+                                                <span class="product-qty-display fw-bold fs-6">0</span>
+                                                <div class="product-qty-btn remove-btn border-0 d-flex align-items-center justify-content-center bg-secondary"
+                                                    role="button" data-price="80">
+                                                    <i class="fa-solid fa-minus text-white"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div
+                                class="d-flex align-items-center justify-content-between mt-3 pt-3 border-top border-light">
+                                <div class="service-price m-0 px-2" data-base="600">600 <i class="icon-saudi_riyal"></i>
+                                </div>
+                                <label
+                                    class="btn btn-blue px-4 py-2 rounded-5 d-flex align-items-center gap-2 m-0 select-service-btn"
+                                    for="c1_s3">
+                                    <i class="fa-regular fa-circle-check fw-normal"></i>
+                                    <span class="btn-text">Select Service</span>
+                                </label>
+                            </div>
+                        </div>
                     </div>
 
                 </div>
@@ -226,25 +632,154 @@
                         <input type="text" placeholder="Search by service name">
                         <i class="fa-light fa-magnifying-glass"></i>
                     </div>
+
+                    <!-- Category Filters -->
+                    <div class="category-filters d-flex align-items-center gap-2 mb-4 overflow-auto pb-1">
+                        <button class="btn category-filter-btn active" data-filter="all">All</button>
+                        <button class="btn category-filter-btn" data-filter="haircut">Haircut</button>
+                        <button class="btn category-filter-btn" data-filter="beard">Beard Shaving</button>
+                    </div>
+
                     <div class="services-list">
-                        <input type="radio" name="service2" id="c2_s1" class="service-radio d-none">
-                        <label class="service-card" for="c2_s1">
-                            <div class="service-card-header">
-                                <div class="service-name-wrap">
-                                    <div class="custom-radio">
-                                        <span class="radio-mark"></span>
-                                    </div>
-                                    <span class="service-name">Hairdressing</span>
+                        <input type="checkbox" name="service2" id="c2_s1" class="service-checkbox d-none">
+                        <div class="service-card animate__animated" data-category="haircut">
+                            <div class="d-flex gap-3 mb-3">
+                                <div class="flex-shrink-0">
+                                    <img src="images/about.webp" class="rounded-3 object-fit-cover service-img"
+                                        alt="Service">
                                 </div>
-                                <span class="service-duration">(Implementation time: 30 minutes)</span>
-                                <div class="service-price">750 <i class="icon-saudi_riyal"></i></div>
+                                <div class="flex-grow-1">
+                                    <div class="service-name-wrap mb-1">
+                                        <span class="service-name fw-bold">Hair Styling</span>
+                                    </div>
+                                    <div class="service-duration mb-2">( Execution time 30 mins )</div>
+                                    <p class="service-desc text-muted m-0">It is a long established fact that a
+                                        reader will be distracted by the readable content of a page when looking at
+                                        its layout.</p>
+                                </div>
                             </div>
-                            <p class="service-desc">There is a long-established fact that the readable content of a page
-                                It will distract the reader from focusing on the external appearance of the text or the
-                                way the paragraphs are placed on the page on which
-                                He reads it. Therefore, the Lorem Ipsum method is used because it gives a normal
-                                distribution</p>
-                        </label>
+
+                            <div class="optional-products mt-3 rounded-4 bg-white">
+                                <div class="d-flex align-items-center justify-content-between p-3 optional-products-toggle collapsed"
+                                    data-bs-toggle="collapse" data-bs-target="#optProd_c2_s1" aria-expanded="false"
+                                    aria-controls="optProd_c2_s1">
+                                    <h4 class="optional-products-title m-0 border-0 p-0 fs-6 fw-bold text-dark">
+                                        Optional Products</h4>
+                                    <i class="fa-solid fa-plus text-blue accordion-icon"></i>
+                                </div>
+                                <div class="collapse" id="optProd_c2_s1">
+                                    <div class="products-list px-3 pb-3">
+                                        <div
+                                            class="product-item d-flex align-items-center py-3 border-bottom border-light">
+                                            <div class="d-flex align-items-center gap-3 w-50">
+                                                <img src="images/about.webp"
+                                                    class="rounded-3 object-fit-cover product-img" alt="Product">
+                                                <div class="product-info">
+                                                    <div class="product-name fw-bold text-dark">Special Care Shampoo
+                                                    </div>
+                                                    <div class="product-detail text-muted">250 ml</div>
+                                                </div>
+                                            </div>
+                                            <div class="product-price fw-bold text-blue w-25 text-center">120 <i
+                                                    class="icon-saudi_riyal"></i></div>
+                                            <div class="d-flex align-items-center justify-content-end gap-3 w-25">
+                                                <div class="product-qty-btn add-btn bg-blue border-0 d-flex align-items-center justify-content-center"
+                                                    role="button" data-price="120">
+                                                    <i class="fa-solid fa-plus text-white"></i>
+                                                </div>
+                                                <span class="product-qty-display fw-bold fs-6">0</span>
+                                                <div class="product-qty-btn remove-btn border-0 d-flex align-items-center justify-content-center bg-secondary"
+                                                    role="button" data-price="120">
+                                                    <i class="fa-solid fa-minus text-white"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div
+                                class="d-flex align-items-center justify-content-between mt-3 pt-3 border-top border-light">
+                                <div class="service-price m-0 px-2" data-base="750">750 <i class="icon-saudi_riyal"></i>
+                                </div>
+                                <label
+                                    class="btn btn-blue px-4 py-2 rounded-5 d-flex align-items-center gap-2 m-0 select-service-btn"
+                                    for="c2_s1">
+                                    <i class="fa-regular fa-circle-check fw-normal"></i>
+                                    <span class="btn-text">Select Service</span>
+                                </label>
+                            </div>
+                        </div>
+
+                        <input type="checkbox" name="service2" id="c2_s2" class="service-checkbox d-none">
+                        <div class="service-card animate__animated" data-category="beard">
+                            <div class="d-flex gap-3 mb-3">
+                                <div class="flex-shrink-0">
+                                    <img src="images/about.webp" class="rounded-3 object-fit-cover service-img"
+                                        alt="Service">
+                                </div>
+                                <div class="flex-grow-1">
+                                    <div class="service-name-wrap mb-1">
+                                        <span class="service-name fw-bold">Moroccan Bath</span>
+                                    </div>
+                                    <div class="service-duration mb-2">( Execution time 90 mins )</div>
+                                    <p class="service-desc text-muted m-0">A complete relaxation experience with the
+                                        use of high quality natural products.</p>
+                                </div>
+                            </div>
+
+                            <div class="optional-products mt-3 rounded-4 bg-white">
+                                <div class="d-flex align-items-center justify-content-between p-3 optional-products-toggle collapsed"
+                                    data-bs-toggle="collapse" data-bs-target="#optProd_c2_s2" aria-expanded="false"
+                                    aria-controls="optProd_c2_s2">
+                                    <h4 class="optional-products-title m-0 border-0 p-0 fs-6 fw-bold text-dark">
+                                        Optional Products</h4>
+                                    <i class="fa-solid fa-plus text-blue accordion-icon"></i>
+                                </div>
+                                <div class="collapse" id="optProd_c2_s2">
+                                    <div class="products-list px-3 pb-3">
+                                        <div
+                                            class="product-item d-flex align-items-center py-3 border-bottom border-light">
+                                            <div class="d-flex align-items-center gap-3 w-50">
+                                                <img src="images/about.webp"
+                                                    class="rounded-3 object-fit-cover product-img" alt="Product">
+                                                <div class="product-info">
+                                                    <div class="product-name fw-bold text-dark">Original Moroccan
+                                                        Loofah
+                                                    </div>
+                                                    <div class="product-detail text-muted">One piece</div>
+                                                </div>
+                                            </div>
+                                            <div class="product-price fw-bold text-blue w-25 text-center">45 <i
+                                                    class="icon-saudi_riyal"></i></div>
+                                            <div class="d-flex align-items-center justify-content-end gap-3 w-25">
+                                                <div class="product-qty-btn add-btn bg-blue border-0 d-flex align-items-center justify-content-center"
+                                                    role="button" data-price="45">
+                                                    <i class="fa-solid fa-plus text-white"></i>
+                                                </div>
+                                                <span class="product-qty-display fw-bold fs-6">0</span>
+                                                <div class="product-qty-btn remove-btn border-0 d-flex align-items-center justify-content-center bg-secondary"
+                                                    role="button" data-price="45">
+                                                    <i class="fa-solid fa-minus text-white"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div
+                                class="d-flex align-items-center justify-content-between mt-3 pt-3 border-top border-light">
+                                <div class="service-price m-0 px-2" data-base="1200">1200 <i
+                                        class="icon-saudi_riyal"></i></div>
+                                <label
+                                    class="btn btn-blue px-4 py-2 rounded-5 d-flex align-items-center gap-2 m-0 select-service-btn"
+                                    for="c2_s2">
+                                    <i class="fa-regular fa-circle-check fw-normal"></i>
+                                    <span class="btn-text">Select Service</span>
+                                </label>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -253,9 +788,9 @@
                 <div class="d-flex align-items-center justify-content-between">
                     <div class="booking-price-info">
                         <div class="booking-total">750 <i class="icon-saudi_riyal"></i></div>
-                        <div class="booking-fee">Booking fee is 50 <i class="icon-saudi_riyal"></i></div>
+                        <div class="booking-fee">Booking fee 50 <i class="icon-saudi_riyal"></i></div>
                     </div>
-                    <a href="Book-now-en.html" class="btn btn-green booking-btn">Book now</a>
+                    <a href="Book-now-en.html" class="btn btn-green booking-btn">Book Now</a>
 
                 </div>
             </div>
@@ -267,38 +802,168 @@
                 </li>
                 <li class="nav-item" role="presentation">
                     <button class="nav-link" data-bs-toggle="tab" data-bs-target="#schedule-tab" type="button"
-                        role="tab">Working hours</button>
+                        role="tab">Working Hours</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" data-bs-toggle="tab" data-bs-target="#reviews-tab" type="button"
+                        role="tab">Reviews</button>
                 </li>
             </ul>
             <div class="tab-content desc-tab-content">
                 <div class="tab-pane active" id="desc-tab" role="tabpanel">
-                    <p>There is a long-established fact that the readable content of a page will distract the reader
-                        from focusing on the form
-                        The outer form of text or paragraphs is placed on the page that is being read. Therefore, the
-                        Lorem Ipsum method is used
-                        Because it gives a more or less natural distribution of letters instead of using “here there is
-                        text content, here there is
-                        "Text content" makes it (i.e. the characters) look like readable text. Many desktop publishing
-                        programs and software
-                        Editing Web pages use Lorem Ipsum by default as a form of text, and if you enter 'lorem ipsum'
-                        In any search engine, many new websites will appear in the search results. Over the years copies
-                        have appeared
-                        New and different versions of Lorem Ipsum text, sometimes by accident, and sometimes
-                        intentionally such as inserting some phrases
-                        Humor to it.</p>
+                    <p>The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters,
+                        as opposed to using 'Content here, content here', making it look like readable English. Many
+                        desktop publishing packages and web page editors now use Lorem Ipsum as their default model
+                        text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy.
+                        Various versions have evolved over the years, sometimes by accident, sometimes on purpose
+                        (injected humour and the like).</p>
                 </div>
                 <div class="tab-pane" id="schedule-tab" role="tabpanel">
-                    <p>Working hours: from Saturday to Thursday - 9:00 am to 11:00 pm</p>
+                    <div class="data-card w-md-50 bg-transparent shadow-none border-0">
+                        <div class="data-list working-hours ">
+                            <div class="data-item   ">
+                                <span class="label"><i class="fa-solid fa-angles-right text-green me-2"></i>
+                                    Saturday</span>
+                                <span class="value">10:00 AM - 11:00 PM</span>
+                            </div>
+                            <div class="data-item">
+                                <span class="label"><i class="fa-solid fa-angles-right text-green me-2"></i>
+                                    Sunday</span>
+                                <span class="value">10:00 AM - 11:00 PM</span>
+                            </div>
+                            <div class="data-item">
+                                <span class="label"><i class="fa-solid fa-angles-right text-green me-2"></i>
+                                    Tuesday</span>
+                                <span class="value">10:00 AM - 11:00 PM</span>
+                            </div>
+                            <div class="data-item">
+                                <span class="label"><i class="fa-solid fa-angles-right text-green me-2"></i>
+                                    Wednesday</span>
+                                <span class="value">10:00 AM - 11:00 PM</span>
+                            </div>
+                            <div class="data-item">
+                                <span class="label"><i class="fa-solid fa-angles-right text-green me-2"></i>
+                                    Thursday</span>
+                                <span class="value">10:00 AM - 11:00 PM</span>
+                            </div>
+                            <div class="data-item">
+                                <span class="label"><i class="fa-solid fa-angles-right text-green me-2"></i>
+                                    Friday</span>
+                                <span class="value">10:00 AM - 11:00 PM</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane" id="reviews-tab" role="tabpanel">
+                    <div class="row">
+                        <div class="col-lg-6 mb-4">
+                            <div class="rating-display-item data-card h-100">
+                                <div class="rating-header d-flex justify-content-between align-items-center mb-2">
+                                    <div class="rating-label fw-bold text-dark">
+                                        Sarah Ahmed
+                                    </div>
+                                    <div class="star-rating static text-warning">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </div>
+                                </div>
+                                <p class="rating-comment text-muted mb-0">
+                                    My experience was very wonderful, the service is excellent and the employees are
+                                    professional. I will definitely come back soon!
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-6 mb-4">
+                            <div class="rating-display-item data-card h-100">
+                                <div class="rating-header d-flex justify-content-between align-items-center mb-2">
+                                    <div class="rating-label fw-bold text-dark">
+                                        Noura Al-Abdullah
+                                    </div>
+                                    <div class="star-rating static text-warning">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-regular fa-star"></i>
+                                    </div>
+                                </div>
+                                <p class="rating-comment text-muted mb-0">
+                                    The salon is very clean and the treatment was classy, I liked their attention to
+                                    the smallest details. I wish you could increase the number of options in the
+                                    services menu.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-6 mb-4 mb-lg-0">
+                            <div class="rating-display-item data-card h-100">
+                                <div class="rating-header d-flex justify-content-between align-items-center mb-2">
+                                    <div class="rating-label fw-bold text-dark">
+                                        Munira Al-Fahad
+                                    </div>
+                                    <div class="star-rating static text-warning">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </div>
+                                </div>
+                                <p class="rating-comment text-muted mb-0">
+                                    Very wonderful and fast service, the salon is tidy and everything was excellent.
+                                    Thank you!
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-6">
+                            <div class="rating-display-item data-card h-100">
+                                <div class="rating-header d-flex justify-content-between align-items-center mb-2">
+                                    <div class="rating-label fw-bold text-dark">
+                                        Hind Mohammed
+                                    </div>
+                                    <div class="star-rating static text-warning">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-reguler fa-star"></i>
+                                    </div>
+                                </div>
+                                <p class="rating-comment text-muted mb-0">
+                                    A beautiful experience, but there was some delay from the scheduled time.
+                                    Overall good service.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
 
         </div>
     </div>
-
-
+    
+    <!-- Start Media Modal -->
+    <div class="modal fade" id="mediaModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content bg-transparent border-0">
+                <div class="modal-header border-0 justify-content-end p-0 mb-2">
+                    <button type="button" class="btn-close btn-close-white modal-invert-close" data-bs-dismiss="modal"
+                        aria-label="Close"></button>
+                </div>
+                <div class="modal-body text-center p-0" id="mediaModalBody">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Media Modal -->
+    </div>
     <!-- Start Footer -->
-    <footer
-        style="background: linear-gradient(rgba(0, 47, 135, 0.9), rgba(0, 47, 135, 0.9)), url(images/footer-bg.webp) no-repeat center center;">
+    <footer class="main-footer">
         <div class="container">
 
 
@@ -314,25 +979,26 @@
                 </div>
                 <div class="col-lg-3  ">
                     <div class="footer-menu">
-                        <h4 class="footer-title">Quick links</h4>
+                        <h4 class="footer-title">Quick Links</h4>
                         <ul class="list-unstyled">
                             <li><a href="index-en.html">Home</a></li>
-                            <li><a href="Categories-en.html">Departments</a></li>
+                            <li><a href="Categories-en.html">Sections</a></li>
                             <li><a href="blogs-en.html">Blog</a></li>
-                            <li><a href="Customer-reviews-en.html">Customer opinions</a></li>
+                            <li><a href="Customer-reviews-en.html">Customer Reviews</a></li>
                             <li><a href>Join us as a service provider</a></li>
                         </ul>
                     </div>
                 </div>
                 <div class="col-lg-3  ">
                     <div class="footer-menu">
-                        <h4 class="footer-title">Important links</h4>
+                        <h4 class="footer-title">Important Links</h4>
                         <ul class="list-unstyled">
                             <li><a href="page-en.html">About Mashghol</a></li>
-                            <li><a href>Terms and Conditions</a></li>
-                            <li><a href>Privacy Policy</a></li>
-                            <li><a href="faqs-en.html">Frequently asked questions</a></li>
+                            <li><a href="page-en.html">Terms and Conditions</a></li>
+                            <li><a href="page-en.html">Privacy Policy</a></li>
+                            <li><a href>FAQs</a></li>
                             <li><a href="contact-en.html">Contact us</a></li>
+                            <li><a href="join-us-en.html">Join as a service provider</a></li>
                         </ul>
                     </div>
                 </div>
@@ -357,7 +1023,7 @@
         <div class="copyrights">
             <div class="container">
                 <div class="text-center">All rights reserved to <span>Mashghol</span> 2026 | <a
-                        href="https://targetlines.com/" target="_blank">Target Lines Company</a></div>
+                        href="https://targetlines.com/" target="_blank">Target Lines Co.</a></div>
             </div>
         </div>
     </footer>

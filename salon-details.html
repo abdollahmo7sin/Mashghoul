@@ -64,6 +64,7 @@
                         <li>
                             <a href="contact.html">اتصل بنا</a>
                         </li>
+                        <li><a href="join-us.html">انضم الينا كمقدم خدمة</a></li>
                     </ul>
                 </nav>
 
@@ -71,7 +72,8 @@
                     <a href="#" class="header-icon search-icon"><i class="fa-light fa-magnifying-glass"></i></a>
                     <a href="Favourites.html" class="header-icon wishlist-icon"><i class="fa-light fa-heart"></i></a>
                     <a href="login.html" class="header-icon user-icon"><i class="fa-light fa-user"></i></a>
-                    <a href="set-location.html" class="header-icon location-icon"><i class="fa-light fa-location-dot"></i></a>
+                    <a href="set-location.html" class="header-icon location-icon"><i
+                            class="fa-light fa-location-dot"></i></a>
                     <a href="salon-details-en.html" class="lang-switcher">En</a>
                 </div>
 
@@ -89,11 +91,11 @@
 
     <!-- Start Breadcrumb -->
     <div class="container">
-        <nav style="--bs-breadcrumb-divider: '|';" aria-label="breadcrumb" class="my-4">
+        <nav aria-label="breadcrumb" class="my-4 custom-breadcrumb">
             <ol class="breadcrumb">
                 <li class="breadcrumb-item"><a href="index.html">الرئيسية</a></li>
                 <li class="breadcrumb-item"><a href="#">سبا رجالى</a></li>
-                <li class="breadcrumb-item active" aria-current="page"> مركز الشخصيات المهمة للعناية الرجالية</li>
+                <li class="breadcrumb-item active" aria-current="page">مقدم الخدمة</li>
             </ol>
         </nav>
     </div>
@@ -103,10 +105,28 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-5 mb-4 mb-lg-0">
-                    <img src="images/about.webp" class="img-fluid salon-hero-img" alt="مركز الشخصيات المهمة للعناية الرجالية">
+                    <div class="salon-hero-slider">
+                        <div class="swiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <img src="images/about.webp" class="img-fluid salon-hero-img" alt="">
+
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="images/about.webp" class="img-fluid salon-hero-img" alt="">
+
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="images/about.webp" class="img-fluid salon-hero-img" alt="">
+
+                                </div>
+                            </div>
+                            <div class="swiper-pagination"></div>
+                        </div>
+                    </div>
                 </div>
                 <div class="col-lg-7">
-                    <h1 class="salon-hero-title">مركز الشخصيات المهمة للعناية الرجالية</h1>
+                    <h1 class="salon-hero-title">مقدم الخدمة</h1>
                     <div class="salon-stats">
                         <div class="stat-card">
                             <div class="stat-label">متوسط التقييمات</div>
@@ -131,157 +151,820 @@
 
             </div>
         </div>
-    </div>
+        <div class="gallery-section mt-5 mb-5">
+            <div class="container">
+                <div class="text-center">
+                    <div class="section-title fz32">معرض الاعمال</div>
+                </div>
+                <div class="gallery-section-wrapper mb-4">
+                    <h3 class="data-card-title">صور</h3>
+                    <div class="row">
+                        <div class="col-lg-3 col-6 mb-4">
+                            <div class="single-testimonial-card p-0 border-0 h-100 bg-transparent shadow-none">
+                                <div class="testimonial-media-wrapper m-0 rounded-4 overflow-hidden shadow-sm h-100"
+                                    onclick="openMediaModal('image', 'images/about.webp')">
+                                    <img src="images/about.webp" class="testimonial-media-img" alt="Gallery">
+                                </div>
+                            </div>
+                        </div>
+                       <div class="col-lg-3 col-6 mb-4">
+                            <div class="single-testimonial-card p-0 border-0 h-100 bg-transparent shadow-none">
+                                <div class="testimonial-media-wrapper m-0 rounded-4 overflow-hidden shadow-sm h-100"
+                                    onclick="openMediaModal('image', 'images/about.webp')">
+                                    <img src="images/about.webp" class="testimonial-media-img" alt="Gallery">
+                                </div>
+                            </div>
+                        </div>
+                         <div class="col-lg-3 col-6 mb-4">
+                            <div class="single-testimonial-card p-0 border-0 h-100 bg-transparent shadow-none">
+                                <div class="testimonial-media-wrapper m-0 rounded-4 overflow-hidden shadow-sm h-100"
+                                    onclick="openMediaModal('image', 'images/about.webp')">
+                                    <img src="images/about.webp" class="testimonial-media-img" alt="Gallery">
+                                </div>
+                            </div>
+                        </div>
+                         <div class="col-lg-3 col-6 mb-4">
+                            <div class="single-testimonial-card p-0 border-0 h-100 bg-transparent shadow-none">
+                                <div class="testimonial-media-wrapper m-0 rounded-4 overflow-hidden shadow-sm h-100"
+                                    onclick="openMediaModal('image', 'images/about.webp')">
+                                    <img src="images/about.webp" class="testimonial-media-img" alt="Gallery">
+                                </div>
+                            </div>
+                        </div>
 
-    <div class="salon-services-section">
-        <div class="container">
-            <ul class="nav nav-tabs chair-tabs" role="tablist">
-                <li class="nav-item" role="presentation">
-                    <button class="nav-link active" data-bs-toggle="tab" data-bs-target="#chair-1" type="button" role="tab">الكرسي الأولى</button>
-                </li>
-                <li class="nav-item" role="presentation">
-                    <button class="nav-link" data-bs-toggle="tab" data-bs-target="#chair-2" type="button" role="tab">الكرسي الثانى</button>
-                </li>
-            </ul>
-
-            <div class="tab-content">
-                <div class="tab-pane active" id="chair-1" role="tabpanel">
-
-                    <div class="salon-search">
-                        <input type="text" placeholder="ابحث باسم الخدمة">
-                        <i class="fa-light fa-magnifying-glass"></i>
                     </div>
-
-                    <div class="services-list">
-                        <input type="radio" name="service" id="c1_s1" class="service-radio d-none" checked>
-                        <label class="service-card" for="c1_s1">
-                            <div class="service-card-header">
-                                <div class="service-name-wrap">
-                                    <div class="custom-radio">
-                                        <span class="radio-mark"></span>
-                                    </div>
-                                    <span class="service-name">تصفيف الشعر</span>
-                                </div>
-                                <span class="service-duration">( مدة التنفيذ 30 دقيقة )</span>
-                                <div class="service-price">750 <i class="icon-saudi_riyal"></i></div>
-                            </div>
-                            <p class="service-desc">هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما
-                                سيلهي القارئ عن التركيز على الشكل الخارجي للنص أو شكل توضع الفقرات في الصفحة التي
-                                يقرأها. ولذلك يتم استخدام طريقة لوريم إيبسوم لأنها تعطي توزيعاً طبيعياً</p>
-                        </label>
-
-                        <input type="radio" name="service" id="c1_s2" class="service-radio d-none">
-                        <label class="service-card" for="c1_s2">
-                            <div class="service-card-header">
-                                <div class="service-name-wrap">
-                                    <div class="custom-radio">
-                                        <span class="radio-mark"></span>
-                                    </div>
-                                    <span class="service-name">صباغة الشعر</span>
-                                </div>
-                                <span class="service-duration">( مدة التنفيذ 45 دقيقة )</span>
-                                <div class="service-price" data-base="750">750 <i class="icon-saudi_riyal"></i></div>
-                            </div>
-                            <p class="service-desc">هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما
-                                سيلهي القارئ عن التركيز على الشكل الخارجي للنص أو شكل توضع الفقرات في الصفحة التي
-                                يقرأها. ولذلك يتم استخدام طريقة لوريم إيبسوم لأنها تعطي توزيعاً طبيعياً</p>
-                            <div class="optional-products">
-                                <h4 class="optional-products-title">منتجات اختيارية</h4>
-                                <div class="products-list">
-                                    <div class="product-item">
-                                        <div class="product-info">
-                                            <div class="product-name">صبغة لوريال كاستينج كستنائي</div>
-                                            <div class="product-detail">فاتح 500 | 72مل</div>
-                                        </div>
-                                        <div class="product-price">250 <i class="icon-saudi_riyal"></i></div>
-                                        <div class="product-qty-btn add-btn" role="button" data-price="250">
-                                            <i class="fa-solid fa-plus"></i>
-                                        </div>
-                                    </div>
-                                    <div class="product-item">
-                                        <div class="product-info">
-                                            <div class="product-name">صبغة لوريال كاستينج كستنائي</div>
-                                            <div class="product-detail">فاتح 500 | 72مل</div>
-                                        </div>
-                                        <div class="product-price">250 <i class="icon-saudi_riyal"></i></div>
-                                        <div class="product-qty-btn remove-btn" role="button" data-price="250">
-                                            <i class="fa-solid fa-minus"></i>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </label>
-                    </div>
-
                 </div>
 
-                <div class="tab-pane" id="chair-2" role="tabpanel">
-                    <div class="salon-search">
-                        <input type="text" placeholder="ابحث باسم الخدمة">
-                        <i class="fa-light fa-magnifying-glass"></i>
-                    </div>
-                    <div class="services-list">
-                        <input type="radio" name="service2" id="c2_s1" class="service-radio d-none">
-                        <label class="service-card" for="c2_s1">
-                            <div class="service-card-header">
-                                <div class="service-name-wrap">
-                                    <div class="custom-radio">
-                                        <span class="radio-mark"></span>
+                 <div class="gallery-section-wrapper mb-4">
+                    <h3 class="data-card-title">فيديوهات</h3>
+                    <div class="row">
+                        
+                        <div class="col-lg-3 col-6 mb-4">
+                            <div class="single-testimonial-card p-0 border-0 h-100 bg-transparent shadow-none">
+                                <div class="testimonial-media-wrapper m-0 rounded-4 overflow-hidden shadow-sm h-100"
+                                    onclick="openMediaModal('video', 'images/video.mp4')">
+                                    <img src="images/about.webp" class="testimonial-media-img" alt="Gallery">
+                                    <div class="play-overlay-btn">
+                                        <i class="fa-solid fa-play"></i>
                                     </div>
-                                    <span class="service-name">تصفيف الشعر</span>
                                 </div>
-                                <span class="service-duration">( مدة التنفيذ 30 دقيقة )</span>
-                                <div class="service-price">750 <i class="icon-saudi_riyal"></i></div>
                             </div>
-                            <p class="service-desc">هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما
-                                سيلهي القارئ عن التركيز على الشكل الخارجي للنص أو شكل توضع الفقرات في الصفحة التي
-                                يقرأها. ولذلك يتم استخدام طريقة لوريم إيبسوم لأنها تعطي توزيعاً طبيعياً</p>
-                        </label>
+                        </div>
+                         <div class="col-lg-3 col-6 mb-4">
+                            <div class="single-testimonial-card p-0 border-0 h-100 bg-transparent shadow-none">
+                                <div class="testimonial-media-wrapper m-0 rounded-4 overflow-hidden shadow-sm h-100"
+                                    onclick="openMediaModal('video', 'images/video.mp4')">
+                                    <img src="images/about.webp" class="testimonial-media-img" alt="Gallery">
+                                    <div class="play-overlay-btn">
+                                        <i class="fa-solid fa-play"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                          <div class="col-lg-3 col-6 mb-4">
+                            <div class="single-testimonial-card p-0 border-0 h-100 bg-transparent shadow-none">
+                                <div class="testimonial-media-wrapper m-0 rounded-4 overflow-hidden shadow-sm h-100"
+                                    onclick="openMediaModal('video', 'images/video.mp4')">
+                                    <img src="images/about.webp" class="testimonial-media-img" alt="Gallery">
+                                    <div class="play-overlay-btn">
+                                        <i class="fa-solid fa-play"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                          <div class="col-lg-3 col-6 mb-4">
+                            <div class="single-testimonial-card p-0 border-0 h-100 bg-transparent shadow-none">
+                                <div class="testimonial-media-wrapper m-0 rounded-4 overflow-hidden shadow-sm h-100"
+                                    onclick="openMediaModal('video', 'images/video.mp4')">
+                                    <img src="images/about.webp" class="testimonial-media-img" alt="Gallery">
+                                    <div class="play-overlay-btn">
+                                        <i class="fa-solid fa-play"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+
+                 <div class="gallery-section-wrapper mb-4">
+                    <h3 class="data-card-title">مقاطع صوتية</h3>
+                    <div class="row">
+                        
+                        <div class="col-lg-3 col-6 mb-4">
+                            <div class="single-testimonial-card p-0 border-0 h-100 bg-transparent shadow-none">
+                                <div
+                                    class="testimonial-media-wrapper testimonial-media-wrapper--dark m-0 rounded-4 overflow-hidden shadow-sm h-100">
+                                    <div class="audio-player-wrapper">
+                                        <button
+                                            class="btn btn-blue play-audio-btn d-flex align-items-center justify-content-center"
+                                            onclick="toggleAudio(this)">
+                                            <i class="fa-solid fa-play"></i>
+                                        </button>
+                                        <img src="images/audio-waves.png" class="waveform-img" alt="Waveform">
+                                        <audio src="images/audio.mp3" onended="resetAudio(this)"></audio>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="col-lg-3 col-6 mb-4">
+                            <div class="single-testimonial-card p-0 border-0 h-100 bg-transparent shadow-none">
+                                <div
+                                    class="testimonial-media-wrapper testimonial-media-wrapper--dark m-0 rounded-4 overflow-hidden shadow-sm h-100">
+                                    <div class="audio-player-wrapper">
+                                        <button
+                                            class="btn btn-blue play-audio-btn d-flex align-items-center justify-content-center"
+                                            onclick="toggleAudio(this)">
+                                            <i class="fa-solid fa-play"></i>
+                                        </button>
+                                        <img src="images/audio-waves.png" class="waveform-img" alt="Waveform">
+                                        <audio src="images/audio.mp3" onended="resetAudio(this)"></audio>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                         <div class="col-lg-3 col-6 mb-4">
+                            <div class="single-testimonial-card p-0 border-0 h-100 bg-transparent shadow-none">
+                                <div
+                                    class="testimonial-media-wrapper testimonial-media-wrapper--dark m-0 rounded-4 overflow-hidden shadow-sm h-100">
+                                    <div class="audio-player-wrapper">
+                                        <button
+                                            class="btn btn-blue play-audio-btn d-flex align-items-center justify-content-center"
+                                            onclick="toggleAudio(this)">
+                                            <i class="fa-solid fa-play"></i>
+                                        </button>
+                                        <img src="images/audio-waves.png" class="waveform-img" alt="Waveform">
+                                        <audio src="images/audio.mp3" onended="resetAudio(this)"></audio>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                         <div class="col-lg-3 col-6 mb-4">
+                            <div class="single-testimonial-card p-0 border-0 h-100 bg-transparent shadow-none">
+                                <div
+                                    class="testimonial-media-wrapper testimonial-media-wrapper--dark m-0 rounded-4 overflow-hidden shadow-sm h-100">
+                                    <div class="audio-player-wrapper">
+                                        <button
+                                            class="btn btn-blue play-audio-btn d-flex align-items-center justify-content-center"
+                                            onclick="toggleAudio(this)">
+                                            <i class="fa-solid fa-play"></i>
+                                        </button>
+                                        <img src="images/audio-waves.png" class="waveform-img" alt="Waveform">
+                                        <audio src="images/audio.mp3" onended="resetAudio(this)"></audio>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
                     </div>
                 </div>
             </div>
-
-            <div class="booking-bar">
-                <div class="d-flex align-items-center justify-content-between">
-                    <div class="booking-price-info">
-                        <div class="booking-total">750 <i class="icon-saudi_riyal"></i></div>
-                        <div class="booking-fee">رسوم الحجز 50 <i class="icon-saudi_riyal"></i></div>
-                    </div>
-                    <a href="Book-now.html" class="btn btn-green booking-btn">احجز الان</a>
-
-                </div>
-            </div>
-
-            <ul class="nav nav-tabs desc-tabs" role="tablist">
-                <li class="nav-item" role="presentation">
-                    <button class="nav-link active" data-bs-toggle="tab" data-bs-target="#desc-tab" type="button" role="tab">الوصف</button>
-                </li>
-                <li class="nav-item" role="presentation">
-                    <button class="nav-link" data-bs-toggle="tab" data-bs-target="#schedule-tab" type="button" role="tab">مواعيد الدوام</button>
-                </li>
-            </ul>
-            <div class="tab-content desc-tab-content">
-                <div class="tab-pane active" id="desc-tab" role="tabpanel">
-                    <p>هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما سيلهي القارئ عن التركيز على الشكل
-                        الخارجي للنص أو شكل توضع الفقرات في الصفحة التي يقرأها. ولذلك يتم استخدام طريقة لوريم إيبسوم
-                        لأنها تعطي توزيعاً طبيعياً -إلى حد ما- للأحرف عوضاً عن استخدام "هنا يوجد محتوى نصي، هنا يوجد
-                        محتوى نصي" فتجعلها تبدو (أي الأحرف) وكأنها نص مقروء. العديد من برامج النشر المكتبي وبرامج
-                        تحرير صفحات الويب تستخدم لوريم إيبسوم بشكل إفتراضي كنموذج عن النص، وإذا قمت بإدخال "lorem ipsum"
-                        في أي محرك بحث ستظهر العديد من المواقع الحديثة العهد في نتائج البحث. على مدى السنين ظهرت نسخ
-                        جديدة ومختلفة من نص لوريم إيبسوم، أحياناً عن طريق الصدفة، وأحياناً عن عمد كإدخال بعض العبارات
-                        الفكاهية إليها.</p>
-                </div>
-                <div class="tab-pane" id="schedule-tab" role="tabpanel">
-                    <p>مواعيد الدوام: من السبت إلى الخميس - 9:00 صباحاً حتى 11:00 مساءً</p>
-                </div>
-            </div>
-
         </div>
+
+        <div class="coupon-provider-section mt-5 mb-5">
+            <div class="container">
+                <h3 class="data-card-title  mb-4">كوبونات مقدم الخدمة</h3>
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="data-card">
+                            <div class="data-list services-data-list mb-2">
+                                <div class="data-item   ">
+                                    <span class="label"><i class="fa-solid fa-angles-left text-green ms-2"></i>
+                                        كود الخصم</span>
+                                    <span class="value">Sono</span>
+                                </div>
+                                <div class="data-item">
+                                    <span class="label"><i class="fa-solid fa-angles-left text-green ms-2"></i>
+                                        نوع الخصم</span>
+                                    <span class="value">ثابت</span>
+                                </div>
+                                <div class="data-item">
+                                    <span class="label"><i class="fa-solid fa-angles-left text-green ms-2"></i>
+                                        قيمة الخصم</span>
+                                    <span class="value">50 <i class="icon-saudi_riyal"></i></span>
+                                </div>
+                                <div class="data-item">
+                                    <span class="label"><i class="fa-solid fa-angles-left text-green ms-2"></i>
+                                        تاريخ الانتهاء</span>
+                                    <span class="value">12/9/2027</span>
+                                </div>
+                            </div>
+                            <div class="d-flex align-items-center justify-content-between mt-4 border-top pt-3">
+                                <span class="text-danger">تطبق الشروط والاحكام</span>
+                                <button class="btn btn-blue py-2 px-5 fz16  ">نسخ</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="salon-services-section">
+            <div class="container">
+                <ul class="nav nav-tabs chair-tabs" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link active" data-bs-toggle="tab" data-bs-target="#chair-1" type="button"
+                            role="tab">الكرسي الأولى</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" data-bs-toggle="tab" data-bs-target="#chair-2" type="button"
+                            role="tab">الكرسي الثانى</button>
+                    </li>
+                </ul>
+
+                <div class="tab-content">
+                    <div class="tab-pane active" id="chair-1" role="tabpanel">
+
+                        <div class="salon-search">
+                            <input type="text" placeholder="ابحث باسم الخدمة">
+                            <i class="fa-light fa-magnifying-glass"></i>
+                        </div>
+
+                        <!-- Category Filters -->
+                        <div class="category-filters d-flex align-items-center gap-2 mb-4 overflow-auto pb-1">
+                            <button class="btn category-filter-btn active" data-filter="all">الكل</button>
+                            <button class="btn category-filter-btn" data-filter="haircut">حلاقة شعر</button>
+                            <button class="btn category-filter-btn" data-filter="beard">حلاقة ذقن</button>
+                        </div>
+
+                        <div class="services-list">
+                            <input type="checkbox" name="service" id="c1_s1" class="service-checkbox d-none">
+                            <div class="service-card animate__animated" data-category="haircut">
+                                <div class="d-flex gap-3 mb-3">
+                                    <div class="flex-shrink-0">
+                                        <img src="images/about.webp" class="rounded-3 object-fit-cover service-img"
+                                            alt="Service">
+                                    </div>
+                                    <div class="flex-grow-1">
+                                        <div class="service-name-wrap mb-1">
+                                            <span class="service-name fw-bold">تصفيف الشعر</span>
+                                        </div>
+                                        <div class="service-duration mb-2">( مدة التنفيذ 30 دقيقة )</div>
+                                        <p class="service-desc text-muted m-0">هناك حقيقة مثبتة
+                                            منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما سيلهي القارئ عن التركيز على
+                                            الشكل الخارجي للنص أو شكل توضع الفقرات في الصفحة التي يقرأها.</p>
+                                    </div>
+                                </div>
+
+                                <div class="optional-products mt-3 rounded-4 bg-white">
+                                    <div class="d-flex align-items-center justify-content-between p-3 optional-products-toggle collapsed"
+                                        data-bs-toggle="collapse" data-bs-target="#optProd_c1_s1" aria-expanded="false"
+                                        aria-controls="optProd_c1_s1">
+                                        <h4 class="optional-products-title m-0 border-0 p-0 fs-6 fw-bold text-dark">
+                                            منتجات اختيارية</h4>
+                                        <i class="fa-solid fa-plus text-blue accordion-icon"></i>
+                                    </div>
+                                    <div class="collapse" id="optProd_c1_s1">
+                                        <div class="products-list px-3 pb-3">
+                                            <div
+                                                class="product-item d-flex align-items-center py-3 border-bottom border-light">
+                                                <div class="d-flex align-items-center gap-3 w-50">
+                                                    <img src="images/about.webp"
+                                                        class="rounded-3 object-fit-cover product-img" alt="Product">
+                                                    <div class="product-info">
+                                                        <div class="product-name fw-bold text-dark">صبغة لوريال كاستينج
+                                                            كستنائي</div>
+                                                        <div class="product-detail text-muted">فاتح 500 | 72مل</div>
+                                                    </div>
+                                                </div>
+                                                <div class="product-price fw-bold text-blue w-25 text-center">250 <i
+                                                        class="icon-saudi_riyal"></i></div>
+                                                <div class="d-flex align-items-center justify-content-end gap-3 w-25">
+                                                    <div class="product-qty-btn add-btn bg-blue border-0 d-flex align-items-center justify-content-center"
+                                                        role="button" data-price="250">
+                                                        <i class="fa-solid fa-plus text-white"></i>
+                                                    </div>
+                                                    <span class="product-qty-display fw-bold fs-6">0</span>
+                                                    <div class="product-qty-btn remove-btn border-0 d-flex align-items-center justify-content-center bg-secondary"
+                                                        role="button" data-price="250">
+                                                        <i class="fa-solid fa-minus text-white"></i>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div
+                                    class="d-flex align-items-center justify-content-between mt-3 pt-3 border-top border-light">
+                                    <div class="service-price m-0 px-2" data-base="750">750 <i
+                                            class="icon-saudi_riyal"></i></div>
+                                    <label
+                                        class="btn btn-blue px-4 py-2 rounded-5 d-flex align-items-center gap-2 m-0 select-service-btn"
+                                        for="c1_s1">
+                                        <i class="fa-regular fa-circle-check fw-normal"></i>
+                                        <span class="btn-text">تحديد الخدمة</span>
+                                    </label>
+                                </div>
+                            </div>
+
+                            <input type="checkbox" name="service" id="c1_s2" class="service-checkbox d-none">
+                            <div class="service-card animate__animated" data-category="beard">
+                                <div class="d-flex gap-3 mb-3">
+                                    <div class="flex-shrink-0">
+                                        <img src="images/about.webp" class="rounded-3 object-fit-cover service-img"
+                                            alt="Service">
+                                    </div>
+                                    <div class="flex-grow-1">
+                                        <div class="service-name-wrap mb-1">
+                                            <span class="service-name fw-bold">صباغة الشعر</span>
+                                        </div>
+                                        <div class="service-duration mb-2">( مدة التنفيذ 45 دقيقة )</div>
+                                        <p class="service-desc text-muted m-0">هناك حقيقة مثبتة
+                                            منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما سيلهي القارئ عن التركيز على
+                                            الشكل الخارجي للنص أو شكل توضع الفقرات في الصفحة التي يقرأها.</p>
+                                    </div>
+                                </div>
+
+                                <div class="optional-products mt-3 rounded-4 bg-white">
+                                    <div class="d-flex align-items-center justify-content-between p-3 optional-products-toggle collapsed"
+                                        data-bs-toggle="collapse" data-bs-target="#optProd_c1_s2" aria-expanded="false"
+                                        aria-controls="optProd_c1_s2">
+                                        <h4 class="optional-products-title m-0 border-0 p-0 fs-6 fw-bold text-dark">
+                                            منتجات اختيارية</h4>
+                                        <i class="fa-solid fa-plus text-blue accordion-icon"></i>
+                                    </div>
+                                    <div class="collapse" id="optProd_c1_s2">
+                                        <div class="products-list px-3 pb-3">
+                                            <div
+                                                class="product-item d-flex align-items-center py-3 border-bottom border-light">
+                                                <div class="d-flex align-items-center gap-3 w-50">
+                                                    <img src="images/about.webp"
+                                                        class="rounded-3 object-fit-cover product-img" alt="Product">
+                                                    <div class="product-info">
+                                                        <div class="product-name fw-bold text-dark">صبغة لوريال كاستينج
+                                                            كستنائي</div>
+                                                        <div class="product-detail text-muted">
+                                                            فاتح
+                                                            500 | 72مل</div>
+                                                    </div>
+                                                </div>
+                                                <div class="product-price fw-bold text-blue w-25 text-center">250 <i
+                                                        class="icon-saudi_riyal"></i></div>
+                                                <div class="d-flex align-items-center justify-content-end gap-3 w-25">
+                                                    <div class="product-qty-btn add-btn bg-blue border-0 d-flex align-items-center justify-content-center"
+                                                        role="button" data-price="250">
+                                                        <i class="fa-solid fa-plus text-white"></i>
+                                                    </div>
+                                                    <span class="product-qty-display fw-bold fs-6">0</span>
+                                                    <div class="product-qty-btn remove-btn border-0 d-flex align-items-center justify-content-center bg-secondary"
+                                                        role="button" data-price="250">
+                                                        <i class="fa-solid fa-minus text-white"></i>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="product-item d-flex align-items-center pt-3">
+                                                <div class="d-flex align-items-center gap-3 w-50">
+                                                    <img src="images/about.webp"
+                                                        class="rounded-3 object-fit-cover product-img" alt="Product">
+                                                    <div class="product-info">
+                                                        <div class="product-name fw-bold text-dark">صبغة لوريال كاستينج
+                                                            كستنائي</div>
+                                                        <div class="product-detail text-muted">
+                                                            فاتح
+                                                            500 | 72مل</div>
+                                                    </div>
+                                                </div>
+                                                <div class="product-price fw-bold text-blue w-25 text-center">250 <i
+                                                        class="icon-saudi_riyal"></i></div>
+                                                <div class="d-flex align-items-center justify-content-end gap-3 w-25">
+                                                    <div class="product-qty-btn add-btn bg-blue border-0 d-flex align-items-center justify-content-center"
+                                                        role="button" data-price="250">
+                                                        <i class="fa-solid fa-plus text-white"></i>
+                                                    </div>
+                                                    <span class="product-qty-display fw-bold fs-6">0</span>
+                                                    <div class="product-qty-btn remove-btn border-0 d-flex align-items-center justify-content-center bg-secondary"
+                                                        role="button" data-price="250">
+                                                        <i class="fa-solid fa-minus text-white"></i>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div
+                                    class="d-flex align-items-center justify-content-between mt-3 pt-3 border-top border-light">
+                                    <div class="service-price m-0 px-2" data-base="750">750 <i
+                                            class="icon-saudi_riyal"></i></div>
+                                    <label
+                                        class="btn btn-blue px-4 py-2 rounded-5 d-flex align-items-center gap-2 m-0 select-service-btn"
+                                        for="c1_s2">
+                                        <i class="fa-regular fa-circle-check fw-normal"></i>
+                                        <span class="btn-text">تحديد الخدمة</span>
+                                    </label>
+                                </div>
+                            </div>
+
+                            <input type="checkbox" name="service" id="c1_s3" class="service-checkbox d-none">
+                            <div class="service-card animate__animated" data-category="haircut">
+                                <div class="d-flex gap-3 mb-3">
+                                    <div class="flex-shrink-0">
+                                        <img src="images/about.webp" class="rounded-3 object-fit-cover service-img"
+                                            alt="Service">
+                                    </div>
+                                    <div class="flex-grow-1">
+                                        <div class="service-name-wrap mb-1">
+                                            <span class="service-name fw-bold">قص مع سشوار</span>
+                                        </div>
+                                        <div class="service-duration mb-2">( مدة التنفيذ 60 دقيقة )</div>
+                                        <p class="service-desc text-muted m-0">هناك حقيقة مثبتة منذ زمن طويل وهي أن
+                                            المحتوى المقروء لصفحة ما سيلهي القارئ عن التركيز على الشكل الخارجي للنص.</p>
+                                    </div>
+                                </div>
+
+                                <div class="optional-products mt-3 rounded-4 bg-white">
+                                    <div class="d-flex align-items-center justify-content-between p-3 optional-products-toggle collapsed"
+                                        data-bs-toggle="collapse" data-bs-target="#optProd_c1_s3" aria-expanded="false"
+                                        aria-controls="optProd_c1_s3">
+                                        <h4 class="optional-products-title m-0 border-0 p-0 fs-6 fw-bold text-dark">
+                                            منتجات اختيارية</h4>
+                                        <i class="fa-solid fa-plus text-blue accordion-icon"></i>
+                                    </div>
+                                    <div class="collapse" id="optProd_c1_s3">
+                                        <div class="products-list px-3 pb-3">
+                                            <div
+                                                class="product-item d-flex align-items-center py-3 border-bottom border-light">
+                                                <div class="d-flex align-items-center gap-3 w-50">
+                                                    <img src="images/about.webp"
+                                                        class="rounded-3 object-fit-cover product-img" alt="Product">
+                                                    <div class="product-info">
+                                                        <div class="product-name fw-bold text-dark">جل تثبيت قوي</div>
+                                                        <div class="product-detail text-muted">150 مل</div>
+                                                    </div>
+                                                </div>
+                                                <div class="product-price fw-bold text-blue w-25 text-center">80 <i
+                                                        class="icon-saudi_riyal"></i></div>
+                                                <div class="d-flex align-items-center justify-content-end gap-3 w-25">
+                                                    <div class="product-qty-btn add-btn bg-blue border-0 d-flex align-items-center justify-content-center"
+                                                        role="button" data-price="80">
+                                                        <i class="fa-solid fa-plus text-white"></i>
+                                                    </div>
+                                                    <span class="product-qty-display fw-bold fs-6">0</span>
+                                                    <div class="product-qty-btn remove-btn border-0 d-flex align-items-center justify-content-center bg-secondary"
+                                                        role="button" data-price="80">
+                                                        <i class="fa-solid fa-minus text-white"></i>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div
+                                    class="d-flex align-items-center justify-content-between mt-3 pt-3 border-top border-light">
+                                    <div class="service-price m-0 px-2" data-base="600">600 <i
+                                            class="icon-saudi_riyal"></i></div>
+                                    <label
+                                        class="btn btn-blue px-4 py-2 rounded-5 d-flex align-items-center gap-2 m-0 select-service-btn"
+                                        for="c1_s3">
+                                        <i class="fa-regular fa-circle-check fw-normal"></i>
+                                        <span class="btn-text">تحديد الخدمة</span>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="tab-pane" id="chair-2" role="tabpanel">
+                        <div class="salon-search">
+                            <input type="text" placeholder="ابحث باسم الخدمة">
+                            <i class="fa-light fa-magnifying-glass"></i>
+                        </div>
+
+                        <!-- Category Filters -->
+                        <div class="category-filters d-flex align-items-center gap-2 mb-4 overflow-auto pb-1">
+                            <button class="btn category-filter-btn active" data-filter="all">الكل</button>
+                            <button class="btn category-filter-btn" data-filter="haircut">حلاقة شعر</button>
+                            <button class="btn category-filter-btn" data-filter="beard">حلاقة ذقن</button>
+                        </div>
+
+                        <div class="services-list">
+                            <input type="checkbox" name="service2" id="c2_s1" class="service-checkbox d-none">
+                            <div class="service-card animate__animated" data-category="haircut">
+                                <div class="d-flex gap-3 mb-3">
+                                    <div class="flex-shrink-0">
+                                        <img src="images/about.webp" class="rounded-3 object-fit-cover service-img"
+                                            alt="Service">
+                                    </div>
+                                    <div class="flex-grow-1">
+                                        <div class="service-name-wrap mb-1">
+                                            <span class="service-name fw-bold">تصفيف الشعر</span>
+                                        </div>
+                                        <div class="service-duration mb-2">( مدة التنفيذ 30 دقيقة )</div>
+                                        <p class="service-desc text-muted m-0">هناك حقيقة مثبتة
+                                            منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما سيلهي القارئ عن التركيز على
+                                            الشكل الخارجي للنص أو شكل توضع الفقرات في الصفحة التي يقرأها.</p>
+                                    </div>
+                                </div>
+
+                                <div class="optional-products mt-3 rounded-4 bg-white">
+                                    <div class="d-flex align-items-center justify-content-between p-3 optional-products-toggle collapsed"
+                                        data-bs-toggle="collapse" data-bs-target="#optProd_c2_s1" aria-expanded="false"
+                                        aria-controls="optProd_c2_s1">
+                                        <h4 class="optional-products-title m-0 border-0 p-0 fs-6 fw-bold text-dark">
+                                            منتجات اختيارية</h4>
+                                        <i class="fa-solid fa-plus text-blue accordion-icon"></i>
+                                    </div>
+                                    <div class="collapse" id="optProd_c2_s1">
+                                        <div class="products-list px-3 pb-3">
+                                            <div
+                                                class="product-item d-flex align-items-center py-3 border-bottom border-light">
+                                                <div class="d-flex align-items-center gap-3 w-50">
+                                                    <img src="images/about.webp"
+                                                        class="rounded-3 object-fit-cover product-img" alt="Product">
+                                                    <div class="product-info">
+                                                        <div class="product-name fw-bold text-dark">شامبو عناية خاصة
+                                                        </div>
+                                                        <div class="product-detail text-muted">250 مل</div>
+                                                    </div>
+                                                </div>
+                                                <div class="product-price fw-bold text-blue w-25 text-center">120 <i
+                                                        class="icon-saudi_riyal"></i></div>
+                                                <div class="d-flex align-items-center justify-content-end gap-3 w-25">
+                                                    <div class="product-qty-btn add-btn bg-blue border-0 d-flex align-items-center justify-content-center"
+                                                        role="button" data-price="120">
+                                                        <i class="fa-solid fa-plus text-white"></i>
+                                                    </div>
+                                                    <span class="product-qty-display fw-bold fs-6">0</span>
+                                                    <div class="product-qty-btn remove-btn border-0 d-flex align-items-center justify-content-center bg-secondary"
+                                                        role="button" data-price="120">
+                                                        <i class="fa-solid fa-minus text-white"></i>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div
+                                    class="d-flex align-items-center justify-content-between mt-3 pt-3 border-top border-light">
+                                    <div class="service-price m-0 px-2" data-base="750">750 <i
+                                            class="icon-saudi_riyal"></i></div>
+                                    <label
+                                        class="btn btn-blue px-4 py-2 rounded-5 d-flex align-items-center gap-2 m-0 select-service-btn"
+                                        for="c2_s1">
+                                        <i class="fa-regular fa-circle-check fw-normal"></i>
+                                        <span class="btn-text">تحديد الخدمة</span>
+                                    </label>
+                                </div>
+                            </div>
+
+                            <input type="checkbox" name="service2" id="c2_s2" class="service-checkbox d-none">
+                            <div class="service-card animate__animated" data-category="beard">
+                                <div class="d-flex gap-3 mb-3">
+                                    <div class="flex-shrink-0">
+                                        <img src="images/about.webp" class="rounded-3 object-fit-cover service-img"
+                                            alt="Service">
+                                    </div>
+                                    <div class="flex-grow-1">
+                                        <div class="service-name-wrap mb-1">
+                                            <span class="service-name fw-bold">حمام مغربي</span>
+                                        </div>
+                                        <div class="service-duration mb-2">( مدة التنفيذ 90 دقيقة )</div>
+                                        <p class="service-desc text-muted m-0">تجربة استرخاء كاملة مع استخدام منتجات
+                                            طبيعية عالية الجودة.</p>
+                                    </div>
+                                </div>
+
+                                <div class="optional-products mt-3 rounded-4 bg-white">
+                                    <div class="d-flex align-items-center justify-content-between p-3 optional-products-toggle collapsed"
+                                        data-bs-toggle="collapse" data-bs-target="#optProd_c2_s2" aria-expanded="false"
+                                        aria-controls="optProd_c2_s2">
+                                        <h4 class="optional-products-title m-0 border-0 p-0 fs-6 fw-bold text-dark">
+                                            منتجات اختيارية</h4>
+                                        <i class="fa-solid fa-plus text-blue accordion-icon"></i>
+                                    </div>
+                                    <div class="collapse" id="optProd_c2_s2">
+                                        <div class="products-list px-3 pb-3">
+                                            <div
+                                                class="product-item d-flex align-items-center py-3 border-bottom border-light">
+                                                <div class="d-flex align-items-center gap-3 w-50">
+                                                    <img src="images/about.webp"
+                                                        class="rounded-3 object-fit-cover product-img" alt="Product">
+                                                    <div class="product-info">
+                                                        <div class="product-name fw-bold text-dark">ليفة مغربية اصلية
+                                                        </div>
+                                                        <div class="product-detail text-muted">قطعة واحدة</div>
+                                                    </div>
+                                                </div>
+                                                <div class="product-price fw-bold text-blue w-25 text-center">45 <i
+                                                        class="icon-saudi_riyal"></i></div>
+                                                <div class="d-flex align-items-center justify-content-end gap-3 w-25">
+                                                    <div class="product-qty-btn add-btn bg-blue border-0 d-flex align-items-center justify-content-center"
+                                                        role="button" data-price="45">
+                                                        <i class="fa-solid fa-plus text-white"></i>
+                                                    </div>
+                                                    <span class="product-qty-display fw-bold fs-6">0</span>
+                                                    <div class="product-qty-btn remove-btn border-0 d-flex align-items-center justify-content-center bg-secondary"
+                                                        role="button" data-price="45">
+                                                        <i class="fa-solid fa-minus text-white"></i>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div
+                                    class="d-flex align-items-center justify-content-between mt-3 pt-3 border-top border-light">
+                                    <div class="service-price m-0 px-2" data-base="1200">1200 <i
+                                            class="icon-saudi_riyal"></i></div>
+                                    <label
+                                        class="btn btn-blue px-4 py-2 rounded-5 d-flex align-items-center gap-2 m-0 select-service-btn"
+                                        for="c2_s2">
+                                        <i class="fa-regular fa-circle-check fw-normal"></i>
+                                        <span class="btn-text">تحديد الخدمة</span>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="booking-bar">
+                    <div class="d-flex align-items-center justify-content-between">
+                        <div class="booking-price-info">
+                            <div class="booking-total">750 <i class="icon-saudi_riyal"></i></div>
+                            <div class="booking-fee">رسوم الحجز 50 <i class="icon-saudi_riyal"></i></div>
+                        </div>
+                        <a href="Book-now.html" class="btn btn-green booking-btn">احجز الان</a>
+
+                    </div>
+                </div>
+
+                <ul class="nav nav-tabs desc-tabs" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link active" data-bs-toggle="tab" data-bs-target="#desc-tab" type="button"
+                            role="tab">الوصف</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" data-bs-toggle="tab" data-bs-target="#schedule-tab" type="button"
+                            role="tab">مواعيد الدوام</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" data-bs-toggle="tab" data-bs-target="#reviews-tab" type="button"
+                            role="tab">التقييمات</button>
+                    </li>
+                </ul>
+                <div class="tab-content desc-tab-content">
+                    <div class="tab-pane active" id="desc-tab" role="tabpanel">
+                        <p>هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما سيلهي القارئ عن التركيز على
+                            الشكل
+                            الخارجي للنص أو شكل توضع الفقرات في الصفحة التي يقرأها. ولذلك يتم استخدام طريقة لوريم إيبسوم
+                            لأنها تعطي توزيعاً طبيعياً -إلى حد ما- للأحرف عوضاً عن استخدام "هنا يوجد محتوى نصي، هنا يوجد
+                            محتوى نصي" فتجعلها تبدو (أي الأحرف) وكأنها نص مقروء. العديد من برامج النشر المكتبي وبرامج
+                            تحرير صفحات الويب تستخدم لوريم إيبسوم بشكل إفتراضي كنموذج عن النص، وإذا قمت بإدخال "lorem
+                            ipsum"
+                            في أي محرك بحث ستظهر العديد من المواقع الحديثة العهد في نتائج البحث. على مدى السنين ظهرت نسخ
+                            جديدة ومختلفة من نص لوريم إيبسوم، أحياناً عن طريق الصدفة، وأحياناً عن عمد كإدخال بعض
+                            العبارات
+                            الفكاهية إليها.</p>
+                    </div>
+                    <div class="tab-pane" id="schedule-tab" role="tabpanel">
+                        <div class="data-card w-md-50 bg-transparent shadow-none border-0">
+                            <div class="data-list working-hours ">
+                                <div class="data-item   ">
+                                    <span class="label"><i class="fa-solid fa-angles-left text-green ms-2"></i>
+                                        السبت</span>
+                                    <span class="value">10:00 صباحاً - 11:00 مساءً</span>
+                                </div>
+                                <div class="data-item">
+                                    <span class="label"><i class="fa-solid fa-angles-left text-green ms-2"></i>
+                                        الأحد</span>
+                                    <span class="value">10:00 صباحاً - 11:00 مساءً</span>
+                                </div>
+                                <div class="data-item">
+                                    <span class="label"><i class="fa-solid fa-angles-left text-green ms-2"></i>
+                                        الثلاثاء</span>
+                                    <span class="value">10:00 صباحاً - 11:00 مساءً</span>
+                                </div>
+                                <div class="data-item">
+                                    <span class="label"><i class="fa-solid fa-angles-left text-green ms-2"></i>
+                                        الأربعاء</span>
+                                    <span class="value">10:00 صباحاً - 11:00 مساءً</span>
+                                </div>
+                                <div class="data-item">
+                                    <span class="label"><i class="fa-solid fa-angles-left text-green ms-2"></i>
+                                        الخميس</span>
+                                    <span class="value">10:00 صباحاً - 11:00 مساءً</span>
+                                </div>
+                                <div class="data-item">
+                                    <span class="label"><i class="fa-solid fa-angles-left text-green ms-2"></i>
+                                        الجمعة</span>
+                                    <span class="value">10:00 صباحاً - 11:00 مساءً</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane" id="reviews-tab" role="tabpanel">
+                        <div class="row">
+                            <div class="col-lg-6 mb-4">
+                                <div class="rating-display-item data-card h-100">
+                                    <div class="rating-header d-flex justify-content-between align-items-center mb-2">
+                                        <div class="rating-label fw-bold text-dark">
+                                            سارة أحمد
+                                        </div>
+                                        <div class="star-rating static text-warning">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                        </div>
+                                    </div>
+                                    <p class="rating-comment text-muted mb-0">
+                                        كانت تجربتي رائعة جدًا، الخدمة ممتازة والموظفات محترفات. أكيد راح أرجع لكم قريب!
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-6 mb-4">
+                                <div class="rating-display-item data-card h-100">
+                                    <div class="rating-header d-flex justify-content-between align-items-center mb-2">
+                                        <div class="rating-label fw-bold text-dark">
+                                            نورة العبدالله
+                                        </div>
+                                        <div class="star-rating static text-warning">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-regular fa-star"></i>
+                                        </div>
+                                    </div>
+                                    <p class="rating-comment text-muted mb-0">
+                                        المشغل نظيف جدًا والتعامل كان راقي، حبيت اهتمامهم بأدق التفاصيل. أتمنى لو تزيدون
+                                        عدد الخيارات في قائمة الخدمات.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-6 mb-4 mb-lg-0">
+                                <div class="rating-display-item data-card h-100">
+                                    <div class="rating-header d-flex justify-content-between align-items-center mb-2">
+                                        <div class="rating-label fw-bold text-dark">
+                                            منيرة الفهد
+                                        </div>
+                                        <div class="star-rating static text-warning">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                        </div>
+                                    </div>
+                                    <p class="rating-comment text-muted mb-0">
+                                        خدمة رائعة جداً وسريعة، الصالون مرتب وكل شيء كان ممتاز. شكراً لكم!
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-6">
+                                <div class="rating-display-item data-card h-100">
+                                    <div class="rating-header d-flex justify-content-between align-items-center mb-2">
+                                        <div class="rating-label fw-bold text-dark">
+                                            هند محمد
+                                        </div>
+                                        <div class="star-rating static text-warning">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-reguler fa-star"></i>
+                                        </div>
+                                    </div>
+                                    <p class="rating-comment text-muted mb-0">
+                                        تجربة جميلة، لكن كان هناك بعض التأخير عن الموعد المحدد. بشكل عام الخدمة جيدة.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <!-- Start Media Modal -->
+        <div class="modal fade" id="mediaModal" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-lg">
+                <div class="modal-content bg-transparent border-0">
+                    <div class="modal-header border-0 justify-content-end p-0 mb-2">
+                        <button type="button" class="btn-close btn-close-white modal-invert-close"
+                            data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body text-center p-0" id="mediaModalBody">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Media Modal -->
     </div>
-
-
     <!-- Start Footer -->
-    <footer style="background: linear-gradient(rgba(0, 47, 135, 0.9), rgba(0, 47, 135, 0.9)), url(images/footer-bg.webp) no-repeat center center;">
+    <footer class="main-footer">
         <div class="container">
 
 
@@ -316,6 +999,7 @@
                             <li><a href="page.html">سياسة الخصوصية</a></li>
                             <li><a href>الاسئلة الشائعة</a></li>
                             <li><a href="contact.html">اتصل بنا</a></li>
+                            <li><a href="join-us.html">انضم الينا كمقدم خدمة</a></li>
                         </ul>
                     </div>
                 </div>
@@ -336,10 +1020,11 @@
         </div>
 
 
-        
+
         <div class="copyrights">
             <div class="container">
-                <div class="text-center">جميع الحقوق محفوظة لـ <span>مشغول</span> 2026 | <a href="https://targetlines.com/" target="_blank">شركة تارجت لاينز</a></div>
+                <div class="text-center">جميع الحقوق محفوظة لـ <span>مشغول</span> 2026 | <a
+                        href="https://targetlines.com/" target="_blank">شركة تارجت لاينز</a></div>
             </div>
         </div>
     </footer>
