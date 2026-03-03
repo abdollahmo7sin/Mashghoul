@@ -4446,4 +4446,11 @@ html:not([dir=rtl]) .fa-angles-left:before {
 .package-card .package-feature i {
   color: #A3D55F;
   margin-inline-end: 8px;
+}
+
+.rating-display-item .nested-reply {
+  padding: 1rem;
+  background-color: #f8f9fa;
+  border-radius: 10px;
+  margin-top: 1rem;
 }/*# sourceMappingURL=main.css.map */

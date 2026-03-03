@@ -672,4 +672,50 @@ document.addEventListener("DOMContentLoaded", function () {
             }
         });
     });
+
+    // ==========================================
+    // Pricing Toggle Logic
+    // ==========================================
+    const pricingTabs = document.querySelectorAll('.desc-tabs .nav-link');
+    if (pricingTabs.length > 0) {
+        // Init state: hide quarterly
+        document.querySelectorAll('.package-price').forEach(priceContainer => {
+            const annualPrice = priceContainer.querySelector('.annual-price');
+            const quarterlyPrice = priceContainer.querySelector('.quarterly-price');
+            if (annualPrice && quarterlyPrice) {
+                quarterlyPrice.style.display = 'none';
+            }
+        });
+
+        pricingTabs.forEach((tab, index) => {
+            tab.addEventListener('click', function (e) {
+                e.preventDefault();
+
+                // Remove active class from all tabs
+                pricingTabs.forEach(t => t.classList.remove('active'));
+
+                // Add active class to clicked tab
+                this.classList.add('active');
+
+                // Toggle prices based on index (0 = Annual, 1 = Quarterly)
+                const isAnnual = index === 0;
+
+                document.querySelectorAll('.package-price').forEach(priceContainer => {
+                    const annualPrice = priceContainer.querySelector('.annual-price');
+                    const quarterlyPrice = priceContainer.querySelector('.quarterly-price');
+
+                    if (annualPrice && quarterlyPrice) {
+                        if (isAnnual) {
+                            annualPrice.style.display = 'block';
+                            quarterlyPrice.style.display = 'none';
+                        } else {
+                            annualPrice.style.display = 'none';
+                            quarterlyPrice.style.display = 'block';
+                        }
+                    }
+                });
+            });
+        });
+    }
+
 });
