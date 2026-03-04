@@ -4210,12 +4210,24 @@ html:not([dir=rtl]) .fa-angles-left:before {
   height: auto;
 }
 
-.single-testimonial-card {
+.single-testimonial-card,
+.single-gallery-card {
   display: flex;
   flex-direction: column;
   height: 100%;
-  min-height: 150px;
   overflow: hidden;
+}
+.single-testimonial-card .card-title,
+.single-gallery-card .card-title {
+  padding: 10px;
+  text-align: center;
+  font-size: 16px;
+  color: #002F87;
+  transition: 0.3s;
+}
+.single-testimonial-card:hover .card-title,
+.single-gallery-card:hover .card-title {
+  color: #A3D55F;
 }
 
 .audio-player-wrapper .btn {
@@ -4232,6 +4244,7 @@ html:not([dir=rtl]) .fa-angles-left:before {
   position: relative;
   background-color: #fff;
   cursor: pointer;
+  min-height: 150px;
   border-bottom-left-radius: inherit;
   border-bottom-right-radius: inherit;
 }

@@ -4956,12 +4956,25 @@ html:not([dir="rtl"]) {
   height: auto;
 }
 
-.single-testimonial-card {
+.single-testimonial-card,
+.single-gallery-card {
   display: flex;
   flex-direction: column;
   height: 100%;
-  min-height: 150px;
+
   overflow: hidden;
+  .card-title {
+    padding: 10px;
+    text-align: center;
+    font-size: 16px;
+    color: $blue;
+    transition: 0.3s;
+  }
+  &:hover {
+    .card-title {
+      color: $green;
+    }
+  }
 }
 
 .audio-player-wrapper {
@@ -4980,6 +4993,7 @@ html:not([dir="rtl"]) {
   position: relative;
   background-color: #fff;
   cursor: pointer;
+  min-height: 150px;
   border-bottom-left-radius: inherit;
   border-bottom-right-radius: inherit;
 
