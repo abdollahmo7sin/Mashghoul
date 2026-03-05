@@ -1,19 +1,21 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="ar" dir="rtl">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content>
-    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap.rtl.min.css">
     <link rel="stylesheet" href="css/all.min.css">
     <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="css/swiper-bundle.min.css">
     <link rel="stylesheet" href="css/main.css">
-    <title>Mashghol - Gallery</title>
+    <title>Mashghol</title>
+
 </head>
 
 <body>
+
 
     <!-- Start Header -->
     <header class="header">
@@ -25,42 +27,61 @@
                     <span class="line line3"></span>
                 </button>
 
-                <a href="index-en.html" class="logo-img" aria-label="logo">
-                    <img class="img-fluid" src="images/logo-en.png" alt="logo">
+                <a href="index.html" class="logo-img" aria-label="logo">
+                    <img class="img-fluid" src="images/logo.png" alt="logo">
                 </a>
 
                 <nav class="navigation">
                     <ul class="main-menu list-unstyled">
-                        <li><a href="index-en.html">Home </a></li>
+                        <li>
+                            <a href="index.html">الرئيسية </a>
+                        </li>
+
                         <li class="menu-item-has-children">
-                            <a href="Categories-en.html">Sections </a>
+                            <a href="Categories.html">الاقسام </a>
                             <ul class="sub-menu list-unstyled">
-                                <li><a href>Section 1</a></li>
-                                <li><a href>Section 2</a></li>
-                                <li><a href>Section 3</a></li>
-                                <li><a href>Section 4</a></li>
+                                <li>
+                                    <a href>قسم 1</a>
+                                </li>
+                                <li>
+                                    <a href>قسم 2</a>
+                                </li>
+                                <li>
+                                    <a href>قسم 3</a>
+                                </li>
+                                <li>
+                                    <a href>قسم 4</a>
+                                </li>
+
                             </ul>
                         </li>
-                        <li><a href="faqs-en.html">FAQs</a></li>
-                        <li><a href="contact-en.html">Contact us</a></li>
-                        <li><a href="join-us-en.html">Join as a service provider</a></li>
+
+
+                        <li>
+                            <a href="faqs.html">الأسئلة الشائعة</a>
+                        </li>
+
+                        <li>
+                            <a href="contact.html">اتصل بنا</a>
+                        </li>
+                        <li><a href="join-us.html">انضم الينا كمقدم خدمة</a></li>
                     </ul>
                 </nav>
 
                 <div class="header-icons ">
                     <a href="#" class="header-icon search-icon"><i class="fa-light fa-magnifying-glass"></i></a>
-                    <a href="Favourites-en.html" class="header-icon wishlist-icon"><i class="fa-light fa-heart"></i></a>
-                    <a href="login-en.html" class="header-icon user-icon"><i class="fa-light fa-user"></i></a>
-                    <a href="set-location-en.html" class="header-icon location-icon"><i
+                    <a href="Favourites.html" class="header-icon wishlist-icon"><i class="fa-light fa-heart"></i></a>
+                    <a href="login.html" class="header-icon user-icon"><i class="fa-light fa-user"></i></a>
+                    <a href="set-location.html" class="header-icon location-icon"><i
                             class="fa-light fa-location-dot"></i></a>
-                    <a href="gallery.html" class="lang-switcher">Ar</a>
+                    <a href="gallery-en.html" class="lang-switcher">En</a>
                 </div>
 
             </div>
 
             <div class="search-form-wrapper">
                 <form class="search-form">
-                    <input type="text" class="search-input form-control" placeholder="Search for...">
+                    <input type="text" class="search-input form-control" placeholder="ابحث عن ...">
                     <button type="submit" class="search-btn btn"><i class="fa-light fa-magnifying-glass"></i></button>
                 </form>
             </div>
@@ -70,54 +91,57 @@
 
     <!-- Start Breadcrumb -->
     <div class="container">
-        <nav class="custom-breadcrumb-nav my-4" aria-label="breadcrumb">
+        <nav aria-label="breadcrumb" class="my-4 custom-breadcrumb">
             <ol class="breadcrumb">
-                <li class="breadcrumb-item"><a href="index-en.html">Home</a></li>
-                <li class="breadcrumb-item active" aria-current="page">Gallery</li>
+                <li class="breadcrumb-item"><a href="index.html">الرئيسية</a></li>
+                <li class="breadcrumb-item active" aria-current="page">معرض الأعمال</li>
             </ol>
         </nav>
     </div>
     <!-- End Breadcrumb -->
-
-    <div class="gallery-section mt-5 mb-5 pb-64">
+    <div class="gallery-section mt-5 mb-5">
         <div class="container">
             <div class="gallery-section-wrapper mb-4">
-                <h3 class="data-card-title">Photos</h3>
+                <h3 class="data-card-title">صور</h3>
                 <div class="row">
                     <div class="col-lg-3 col-6 mb-4">
                         <div class="single-gallery-card p-0 border-0 h-100 bg-transparent shadow-none">
                             <div class="testimonial-media-wrapper m-0 rounded-4 overflow-hidden shadow-sm h-100"
-                                onclick="openMediaModal('image', 'images/about.webp')">
-                                <img src="images/about.webp" class="testimonial-media-img" alt="Gallery">
+                                onclick="openMediaModal('image', 'https://placehold.co/1000x600/002873/737373?text=1000x600')">
+                                <img src="https://placehold.co/400x300/002873/737373?text=400x300"
+                                    class="testimonial-media-img" alt="Gallery">
                             </div>
-                            <div class="card-title">Image Title</div>
+                            <div class="card-title">عنوان الصورة</div>
                         </div>
                     </div>
                     <div class="col-lg-3 col-6 mb-4">
                         <div class="single-gallery-card p-0 border-0 h-100 bg-transparent shadow-none">
                             <div class="testimonial-media-wrapper m-0 rounded-4 overflow-hidden shadow-sm h-100"
-                                onclick="openMediaModal('image', 'images/about.webp')">
-                                <img src="images/about.webp" class="testimonial-media-img" alt="Gallery">
+                                onclick="openMediaModal('image', 'https://placehold.co/1000x600/002873/737373?text=1000x600')">
+                                <img src="https://placehold.co/400x300/002873/737373?text=400x300"
+                                    class="testimonial-media-img" alt="Gallery">
                             </div>
-                            <div class="card-title">Image Title</div>
+                            <div class="card-title">عنوان الصورة</div>
                         </div>
                     </div>
                     <div class="col-lg-3 col-6 mb-4">
                         <div class="single-gallery-card p-0 border-0 h-100 bg-transparent shadow-none">
                             <div class="testimonial-media-wrapper m-0 rounded-4 overflow-hidden shadow-sm h-100"
-                                onclick="openMediaModal('image', 'images/about.webp')">
-                                <img src="images/about.webp" class="testimonial-media-img" alt="Gallery">
+                                onclick="openMediaModal('image', 'https://placehold.co/1000x600/002873/737373?text=1000x600')">
+                                <img src="https://placehold.co/400x300/002873/737373?text=400x300"
+                                    class="testimonial-media-img" alt="Gallery">
                             </div>
-                            <div class="card-title">Image Title</div>
+                            <div class="card-title">عنوان الصورة</div>
                         </div>
                     </div>
                     <div class="col-lg-3 col-6 mb-4">
                         <div class="single-gallery-card p-0 border-0 h-100 bg-transparent shadow-none">
                             <div class="testimonial-media-wrapper m-0 rounded-4 overflow-hidden shadow-sm h-100"
-                                onclick="openMediaModal('image', 'images/about.webp')">
-                                <img src="images/about.webp" class="testimonial-media-img" alt="Gallery">
+                                onclick="openMediaModal('image', 'https://placehold.co/1000x600/002873/737373?text=1000x600')">
+                                <img src="https://placehold.co/400x300/002873/737373?text=400x300"
+                                    class="testimonial-media-img" alt="Gallery">
                             </div>
-                            <div class="card-title">Image Title</div>
+                            <div class="card-title">عنوان الصورة</div>
                         </div>
                     </div>
 
@@ -125,55 +149,59 @@
             </div>
 
             <div class="gallery-section-wrapper mb-4">
-                <h3 class="data-card-title">Videos</h3>
+                <h3 class="data-card-title">فيديوهات</h3>
                 <div class="row">
 
                     <div class="col-lg-3 col-6 mb-4">
                         <div class="single-gallery-card p-0 border-0 h-100 bg-transparent shadow-none">
                             <div class="testimonial-media-wrapper m-0 rounded-4 overflow-hidden shadow-sm h-100"
                                 onclick="openMediaModal('video', 'images/video.mp4')">
-                                <img src="images/about.webp" class="testimonial-media-img" alt="Gallery">
+                                <img src="https://placehold.co/400x300/002873/737373?text=400x300"
+                                    class="testimonial-media-img" alt="Gallery">
                                 <div class="play-overlay-btn">
                                     <i class="fa-solid fa-play"></i>
                                 </div>
                             </div>
-                            <div class="card-title">Video Title</div>
+                            <div class="card-title">عنوان الفيديو</div>
                         </div>
                     </div>
                     <div class="col-lg-3 col-6 mb-4">
                         <div class="single-gallery-card p-0 border-0 h-100 bg-transparent shadow-none">
                             <div class="testimonial-media-wrapper m-0 rounded-4 overflow-hidden shadow-sm h-100"
                                 onclick="openMediaModal('video', 'images/video.mp4')">
-                                <img src="images/about.webp" class="testimonial-media-img" alt="Gallery">
+                                <img src="https://placehold.co/400x300/002873/737373?text=400x300"
+                                    class="testimonial-media-img" alt="Gallery">
                                 <div class="play-overlay-btn">
                                     <i class="fa-solid fa-play"></i>
                                 </div>
                             </div>
-                            <div class="card-title">Video Title</div>
+                            <div class="card-title">عنوان الفيديو</div>
                         </div>
                     </div>
                     <div class="col-lg-3 col-6 mb-4">
                         <div class="single-gallery-card p-0 border-0 h-100 bg-transparent shadow-none">
                             <div class="testimonial-media-wrapper m-0 rounded-4 overflow-hidden shadow-sm h-100"
                                 onclick="openMediaModal('video', 'images/video.mp4')">
-                                <img src="images/about.webp" class="testimonial-media-img" alt="Gallery">
+                                <img src="https://placehold.co/400x300/002873/737373?text=400x300"
+                                    class="testimonial-media-img" alt="Gallery">
                                 <div class="play-overlay-btn">
                                     <i class="fa-solid fa-play"></i>
                                 </div>
                             </div>
-                            <div class="card-title">Video Title</div>
+                            <div class="card-title">عنوان الفيديو</div>
                         </div>
                     </div>
                     <div class="col-lg-3 col-6 mb-4">
                         <div class="single-gallery-card p-0 border-0 h-100 bg-transparent shadow-none">
                             <div class="testimonial-media-wrapper m-0 rounded-4 overflow-hidden shadow-sm h-100"
                                 onclick="openMediaModal('video', 'images/video.mp4')">
-                                <img src="images/about.webp" class="testimonial-media-img" alt="Gallery">
+                                <img src="https://placehold.co/400x300/002873/737373?text=400x300"
+                                    class="testimonial-media-img" alt="Gallery">
                                 <div class="play-overlay-btn">
                                     <i class="fa-solid fa-play"></i>
                                 </div>
                             </div>
-                            <div class="card-title">Video Title</div>
+                            <div class="card-title">عنوان الفيديو</div>
                         </div>
                     </div>
 
@@ -182,7 +210,7 @@
 
 
             <div class="gallery-section-wrapper mb-4">
-                <h3 class="data-card-title">Audio Clips</h3>
+                <h3 class="data-card-title">مقاطع صوتية</h3>
                 <div class="row">
 
                     <div class="col-lg-3 col-6 mb-4">
@@ -199,7 +227,7 @@
                                     <audio src="images/audio.mp3" onended="resetAudio(this)"></audio>
                                 </div>
                             </div>
-                            <div class="card-title">Audio Title</div>
+                            <div class="card-title">عنوان الصوت</div>
                         </div>
                     </div>
 
@@ -217,7 +245,7 @@
                                     <audio src="images/audio.mp3" onended="resetAudio(this)"></audio>
                                 </div>
                             </div>
-                            <div class="card-title">Audio Title</div>
+                            <div class="card-title">عنوان الصوت</div>
                         </div>
                     </div>
                     <div class="col-lg-3 col-6 mb-4">
@@ -234,7 +262,7 @@
                                     <audio src="images/audio.mp3" onended="resetAudio(this)"></audio>
                                 </div>
                             </div>
-                            <div class="card-title">Audio Title</div>
+                            <div class="card-title">عنوان الصوت</div>
                         </div>
                     </div>
                     <div class="col-lg-3 col-6 mb-4">
@@ -251,7 +279,7 @@
                                     <audio src="images/audio.mp3" onended="resetAudio(this)"></audio>
                                 </div>
                             </div>
-                            <div class="card-title">Audio Title</div>
+                            <div class="card-title">عنوان الصوت</div>
                         </div>
                     </div>
 
@@ -259,7 +287,6 @@
             </div>
         </div>
     </div>
-
     <!-- Start Media Modal -->
     <div class="modal fade" id="mediaModal" tabindex="-1" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered modal-lg">
@@ -274,59 +301,68 @@
         </div>
     </div>
     <!-- End Media Modal -->
-
     <!-- Start Footer -->
-    <footer class="site-footer">
+    <footer class="main-footer">
         <div class="container">
+
+
             <div class="row">
+
                 <div class="col-lg-3">
                     <div class="footer-about">
-                        <img src="images/logo-en.png" class="img-fluid" alt>
-                        <p>Your ideal destination for beauty services with ease and comfort!</p>
+
+                        <img src="images/logo_optmized.webp" class="img-fluid" alt>
+                        <p>وجهتك المثالية لخدمات التجميل بكل سهولة وراحة!</p>
+
                     </div>
                 </div>
                 <div class="col-lg-3  ">
                     <div class="footer-menu">
-                        <h4 class="footer-title">Quick Links</h4>
+                        <h4 class="footer-title">روابط سريعة</h4>
                         <ul class="list-unstyled">
-                            <li><a href="index-en.html">Home</a></li>
-                            <li><a href="Categories-en.html">Sections</a></li>
-                            <li><a href="blogs-en.html">Blog</a></li>
-                            <li><a href="Customer-reviews-en.html">Customer Reviews</a></li>
-                            <li><a href>Join us as a service provider</a></li>
+                            <li><a href="index.html">الرئيسية</a></li>
+                            <li><a href="Categories.html">الأقسام</a></li>
+                            <li><a href="blogs.html">المدونة</a></li>
+                            <li><a href="Customer-reviews.html">آراء العملاء</a></li>
+                            <li><a href>انضم الينا كمقدم خدمة</a></li>
                         </ul>
                     </div>
                 </div>
                 <div class="col-lg-3  ">
                     <div class="footer-menu">
-                        <h4 class="footer-title">Important Links</h4>
+                        <h4 class="footer-title">روابط هامة</h4>
                         <ul class="list-unstyled">
-                            <li><a href="page-en.html">About Mashghol</a></li>
-                            <li><a href="page-en.html">Terms and Conditions</a></li>
-                            <li><a href="page-en.html">Privacy Policy</a></li>
-                            <li><a href>FAQs</a></li>
-                            <li><a href="contact-en.html">Contact us</a></li>
-                            <li><a href="join-us-en.html">Join as a service provider</a></li>
+                            <li><a href="page.html">عن مشغول</a></li>
+                            <li><a href="page.html">الشروط والأحكام</a></li>
+                            <li><a href="page.html">سياسة الخصوصية</a></li>
+                            <li><a href>الاسئلة الشائعة</a></li>
+                            <li><a href="contact.html">اتصل بنا</a></li>
+                            <li><a href="join-us.html">انضم الينا كمقدم خدمة</a></li>
                         </ul>
                     </div>
                 </div>
                 <div class="col-lg-3  ">
                     <div class="footer-info footer-menu">
-                        <h4 class="footer-title">Contact us</h4>
+                        <h4 class="footer-title">تواصل معنا</h4>
                         <ul class="list-unstyled">
                             <li> <a href>+966 50 000 0000</a></li>
                             <li> <a href>+966 50 000 0000</a></li>
                             <li> <a href>info@gmail.com</a></li>
                         </ul>
+
                     </div>
                 </div>
             </div>
+
+
         </div>
+
+
 
         <div class="copyrights">
             <div class="container">
-                <div class="text-center">All rights reserved to <span>Mashghol</span> 2026 | <a
-                        href="https://targetlines.com/" target="_blank">Target Lines Co.</a></div>
+                <div class="text-center">جميع الحقوق محفوظة لـ <span>مشغول</span> 2026 | <a
+                        href="https://targetlines.com/" target="_blank">شركة تارجت لاينز</a></div>
             </div>
         </div>
     </footer>
@@ -339,6 +375,7 @@
         </div>
         <!-- End Back to Top -->
         <a href class="whatsapp-icon"><i class="fab fa-whatsapp"></i></a>
+
     </div>
 
     <script src="js/jquery.min.js"></script>
@@ -346,6 +383,8 @@
     <script src="js/wow.min.js"></script>
     <script src="js/swiper-bundle.min.js"></script>
     <script src="js/main.js"></script>
+
+
 
 </body>
 
